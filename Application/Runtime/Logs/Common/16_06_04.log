@@ -4,3 +4,45 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
 ERR: 无法加载模块:Favicon
 
+[ 2016-06-04T10:17:50+08:00 ] 127.0.0.1 /Public/images//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-04T10:19:31+08:00 ] 127.0.0.1 /Public/images//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-04T10:19:45+08:00 ] 127.0.0.1 /Public/images//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-04T10:19:46+08:00 ] 127.0.0.1 /Public/images//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-04T10:20:00+08:00 ] 127.0.0.1 /Public/images//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-04T10:21:00+08:00 ] 127.0.0.1 /Public/images//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-04T10:25:26+08:00 ] 127.0.0.1 /[md
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+ERR: 无法加载模块:[md
+

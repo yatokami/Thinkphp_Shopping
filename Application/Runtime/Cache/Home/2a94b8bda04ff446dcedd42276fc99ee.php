@@ -48,6 +48,7 @@
         }
     </style>
 	
+
     <style type="text/css">
     .scroll {
         margin: 0 auto;
@@ -159,25 +160,21 @@
      <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
         <div class="list-group">
             <a  class="list-group-item" href="/Home/Index">首页</a>
-            <?php if(is_array($data["goodtype"])): $i = 0; $__LIST__ = $data["goodtype"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a class="list-group-item" href=""><?php echo ($vo["type_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>         
+            <?php if(is_array($data["goodtype"])): $i = 0; $__LIST__ = $data["goodtype"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a class="list-group-item" href='<?php echo U('Index/index', array('type_id' => $vo['type_id']));?>'><?php echo ($vo["type_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>         
             <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
         </div>
     </div><!--/.sidebar-offcanvas -->
 </div>
 <div class="btn-group" role="group" aria-label="...">
     <ul class="pager">
-      
-            <li> <a style="color:Gray">上一页</a></li>
-       
-            <li><a style="color:Gray">下一页</a></li>
-        
+      <?php echo ($page); ?>
     </ul>
 </div>
 
  </div>
  
     <script type="text/javascript">
-
+      
 //兼容各种浏览器
 
   $(function(){

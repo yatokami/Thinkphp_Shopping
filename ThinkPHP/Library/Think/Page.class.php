@@ -93,7 +93,7 @@ class Page{
 
         //上一页
         $up_row  = $this->nowPage - 1;
-        $up_page = $up_row > 0 ? '<a class="prev" href="' . $this->url($up_row) . '">' . $this->config['prev'] . '</a>' : '';
+        $up_page = $up_row > 0 ? ' <a class="prev" href="' . $this->url($up_row) . '">' . $this->config['prev'] . '</a>' : '';
 
         //下一页
         $down_row  = $this->nowPage + 1;

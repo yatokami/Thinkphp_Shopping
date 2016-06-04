@@ -1,3 +1,4 @@
+
 <extend name="./Application/Home/View/layout.html" />
 
 <block name="content">
@@ -49,7 +50,7 @@
         <div class="list-group">
             <a  class="list-group-item" href="/Home/Index">首页</a>
             <volist name="data.goodtype" id="vo">
-                <a class="list-group-item" href="">{$vo.type_name}</a>
+                <a class="list-group-item" href='{:U('Index/index', array('type_id' => $vo['type_id']))}'>{$vo.type_name}</a>
             </volist>         
             <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
         </div>
@@ -57,11 +58,7 @@
 </div>
 <div class="btn-group" role="group" aria-label="...">
     <ul class="pager">
-      
-            <li> <a style="color:Gray">上一页</a></li>
-       
-            <li><a style="color:Gray">下一页</a></li>
-        
+      {$page}
     </ul>
 </div>
 </block>
@@ -69,7 +66,7 @@
 
 <block name="script">
     <script type="text/javascript">
-
+      
 //兼容各种浏览器
 
   $(function(){
@@ -169,6 +166,7 @@
 </script>
 </block>
 <block name="css">
+
     <style type="text/css">
     .scroll {
         margin: 0 auto;
