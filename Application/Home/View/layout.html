@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+	<load href="__PUBLIC__/bootstrap/css/bootstrap.min.css" />
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<load href="__PUBLIC__/plugins/jQuery/jQuery-2.1.4.min.js" />
+	<load href="__PUBLIC__/bootstrap/js/bootstrap.min.js" />
+
+    <style>
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 10px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+    .li-quantity{
+            margin: 20px 0 0 130px;
+            width: 100px;
+        }
+    </style>
+	<block name="css"></block>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<include file="./Application/Home/View/header.html" />
+ <div class="container">
+  <block name="content"></block>
+ </div>
+ <block name="script"></block>
+</body>
+</html>
