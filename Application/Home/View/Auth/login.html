@@ -40,6 +40,7 @@
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-success btn-block" value="登 陆" />
+                            <a href="retrieve" class="btn btn-primary" style="float: left;margin-top: 20px;">忘记密码？</a>
                             <a href="register" class="btn btn-primary" style="float: right;margin-top: 20px;">注 册</a>
                         </div>
                     </form>

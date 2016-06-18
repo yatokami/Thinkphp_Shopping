@@ -92,22 +92,22 @@
 
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-        <a class="navbar-brand" href="/Home/Index">手机电子商城</a>
+        <a class="navbar-brand" href="/Home/Index" style="padding:15px 150px">手机电子商城</a>
     </div>
-    <div class="navbar-right">
+    <div class="navbar-right" style="margin-right: 200px">
         <ul class="nav navbar-nav">
-            <?php if($data['uname'] == null): ?><li><a href="">登录</a></li>
+            <?php if($uname == null): ?><li><a href="<?php echo U('Auth/login');?>">登录</a></li>
             <?php else: ?>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo ($data['uname']); ?><span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo ($uname); ?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/User/UserShow">账号管理</a></li>
-                        <li><a href="/Authentication/Logout">退出</a></li>
+                        <li><a href="<?php echo U('User/info');?>">账号管理</a></li>
+                        <li><a href="<?php echo U('Auth/logout');?>">退出</a></li>
                     </ul>
                 </li>
-                <li><a href="/Home/Cart">购物车</a></li><?php endif; ?>
-            <li><a href="/Home/Index">主页</a></li>
-            <li><a href="#contact">联系客服</a></li>
+                <li><a href="<?php echo U('User/cart');?>">购物车</a></li><?php endif; ?>
+            <li><a href="<?php echo U('Index/index');?>">主页</a></li>
+            <li><a href="<?php echo U('Index/server_center');?>">联系客服</a></li>
         </ul>
     </div>
  </nav>
@@ -121,6 +121,11 @@
         <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
         </p>
+        <form id="form1" action="<?php echo U('Index/search');?>" method="get">
+          <div class="input-group">
+          <input type="text" name="search_name" class="form-control input-lg"><span class="input-group-addon btn btn-primary" onclick="document.getElementById('form1').submit();">搜索</span>
+          </div>
+        </form>
         <div class="jumbotron" style="background-color:white">
             <h3>端午大放送</h3>
             <div class="scroll">
@@ -150,7 +155,7 @@
                     <div class="caption">
                         <h4>商品名称:<?php echo ($vo["goods_name"]); ?></h4>
                         <p>单价:<?php echo ($vo["price"]); ?></p>
-                        <p><a href="" class="btn btn-primary" role="button">点击查看详情</a></p>
+                        <p><a href='<?php echo U('Index/good_info', array('goods_id' => $vo['goods_id']));?>' class="btn btn-primary" role="button">点击查看详情</a></p>
                     </div>
                 </div>
             </div><?php endforeach; endif; else: echo "" ;endif; ?>

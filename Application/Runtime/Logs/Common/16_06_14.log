@@ -1,0 +1,672 @@
+[ 2016-06-14T12:00:47+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-06-14T12:22:30+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-06-14T12:25:54+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:25:54+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:26:36+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:26:36+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:27:15+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:27:15+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:28:43+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:28:43+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:30:15+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:30:15+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:31:54+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:31:54+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:32:57+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:33:10+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:33:10+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:33:45+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:33:45+08:00 ] 127.0.0.1 //cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T12:36:06+08:00 ] 127.0.0.1 //cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+ERR: 无法加载模块:Cdn.bootcss.com
+
+[ 2016-06-14T13:22:03+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:22:03+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:22:03+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T13:22:34+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:22:34+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:22:34+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T13:24:25+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:24:25+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:24:25+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T13:27:26+08:00 ] 127.0.0.1 /Auth/verify_c/1465882042487
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+ERR: 无法加载模块:Auth
+
+[ 2016-06-14T13:27:27+08:00 ] 127.0.0.1 /Auth/verify_c/1465882047709
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+ERR: 无法加载模块:Auth
+
+[ 2016-06-14T13:33:52+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:34:05+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:34:09+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T13:34:15+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:27:49+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:27:52+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:28:00+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:28:00+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:28:00+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:28:09+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:28:09+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:28:15+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:28:20+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:28:20+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:28:20+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:29:23+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:29:23+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:29:23+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:33:39+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:33:39+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:39:03+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005065s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:39:03+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:39:03+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:39:23+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:39:23+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:39:23+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:39:40+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:39:40+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:39:41+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:48:24+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:48:24+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:48:24+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:49:19+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:49:19+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:49:19+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:50:20+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:50:20+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:50:20+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:52:23+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:52:24+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:52:24+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:54:05+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:54:05+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:54:05+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:54:38+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:54:38+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:55:16+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:55:16+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:55:38+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:55:38+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:55:38+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:55:52+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:55:52+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002058s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:56:11+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:56:11+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:58:36+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:58:37+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T14:59:53+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T14:59:53+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:02:28+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:02:29+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:04:59+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:04:59+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:04:59+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:05:17+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:05:17+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:06:44+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:06:45+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:06:45+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:07:22+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:07:22+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:07:35+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:07:35+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:08:51+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016089s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:08:51+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:09:33+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:09:33+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:09:33+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-14T15:13:38+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:13:39+08:00 ] 127.0.0.1 /Public/bootstrap/js/i18n/defaults-*.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+ERR: 无法加载模块:ErrorFiles
+
+[ 2016-06-14T15:13:39+08:00 ] 127.0.0.1 /Public/bootstrap/js/bootstrap-select.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001509s ]
+ERR: 无法加载模块:Public
+

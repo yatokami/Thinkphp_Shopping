@@ -2,13 +2,15 @@
 namespace Home\Controller;
 use Think\Controller;
 class AuthController extends Controller {
+
+    //登录页面
     public function login() {
         $this->display();
     }
-
+    //用户登录
     public function getlogin() {
         $uname = I('post.uname');
-        $pwd = I('post.pwd');
+        $pwd = md5(I('post.pwd'));
         $users = M('users');
 
         if($users->where(['uname' => $uname, 'pwd' => $pwd])->select()) {
@@ -20,18 +22,19 @@ class AuthController extends Controller {
         
     }
 
+    //注册页面
     public function register() {
         $this->display();
     }
     
+    //用户注册
     public function getregister() {
         
         $users = M('users');
         $data['uname'] = I('post.uname');
-        $data['pwd'] = I('post.pwd');
-
+        $data['pwd'] = md5(I('post.pwd'));
         if(preg_match("/^[a-zA-Z][0-9a-zA-Z]{5,12}$/", $data['uname'])) {
-            if(preg_match("/^[0-9a-zA-Z]{5,12}$/", $data['pwd'])) {
+            if(preg_match("/^[0-9a-zA-Z]{5,12}$/", I('post.pwd'))) {
                 if(!($users->where("uname ='%s'", $data['uname'])->select())) {
 
                     $userinfo = M('userinfo');
@@ -41,7 +44,10 @@ class AuthController extends Controller {
                     $data2['email'] = I('email');
                     $data2['address'] = I('address');
                     $data2['postcode'] = I('postcode');
-                    $data2['reg_time'] = time();     
+                    $data2['reg_time'] = time();
+
+                    $data['secret'] = I('Secret');
+                    $data['answer'] = I('Answer');
 
                     $data2['uid'] = $users->add($data);
 
@@ -58,4 +64,56 @@ class AuthController extends Controller {
         }
     }
 
+    //找回密码页面
+    public function retrieve() {
+        $this->display();
+    }
+
+    //验证码
+    public function verify_c() {    
+        $Verify = new \Think\Verify();  
+        $Verify->fontSize = 18;  
+        $Verify->length   = 4;  
+        $Verify->useNoise = false;  
+        $Verify->codeSet = '0123456789';  
+        $Verify->imageW = 130;  
+        $Verify->imageH = 50;  
+        //$Verify->expire = 600;  
+        $Verify->entry();   
+    }
+
+    //修改密码
+    public function change_password() {
+        $data['uname'] = I('uname');
+        $data['pwd'] = md5(I('password'));
+        $data['secret'] = I('secret');
+        $data['answer'] = I('answer');
+        $verify = I('verify');
+        $Users = M('users');
+        $map['secret'] = $data['secret'];
+        $map['answer'] = $data['answer'];
+
+        if(check_verify($verify)) {
+            $count1 = $Users->where(['uname' => $data['uname']])->count();
+            if($count1 == 1) {
+                $count2 = $Users->where($map)->count();
+                if($count2 == 1) {
+                    $count = $Users->where(['uname' => $data['uname']])->save($data);
+                    $this->ajaxReturn($count);
+                } else {
+                    $this->ajaxReturn(-3);
+                }
+            } else {
+                $this->ajaxReturn(-2);
+            }
+        } else {
+            $this->ajaxReturn(-1);
+        }
+    }
+
+    //退出
+    public function logout() {
+        session(null);
+        $this->success('退出成功等待重新登录','../Auth/login');
+    }
 }

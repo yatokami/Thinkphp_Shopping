@@ -1,0 +1,66 @@
+<extend name="./Application/Home/View/layout.html" />
+
+<block name="content">   
+    <div class="row" >
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="10">
+                <li class="active"><a href="{:U('User/info')}">用户个人信息修改</a></li>
+                <li><a href="{:U('User/order')}">订单记录</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <form role="form" action="{:U('User/update')}" method="post">
+                <div class="form-group">
+                    <h1>尊敬的 {$data['uname']}</h1>
+                </div>
+                <div class="form-group">
+                    <label for="name">真实姓名</label><input type="text" name="RealName" class="form-control" value="{$data['info'][0]['realname']}" required/>
+                </div>
+                <div class="form-group">
+                    <label for="name">性别</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="Sex" id="optionsRadios1"
+                                   value="1">  男
+                        </label>
+                        <label>
+                            <input type="radio" name="Sex" id="optionsRadios2"
+                                   value="2">
+                            女
+                        </label>
+                        <label>
+                            <input type="radio" name="Sex" id="optionsRadios3"
+                                   value="3">
+                            秀吉
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">电话</label>
+                        <input type="text" name="Tel" class="form-control" value="{$data['info'][0]['tel']}" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Email</label>
+                        <input type="text" name="Email" class="form-control" value="{$data['info'][0]['email']}" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Address</label>
+                        <input type="text" name="Address" class="form-control" value="{$data['info'][0]['address']}" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">PostCode</label>
+                        <input type="text" name="PostCode" class="form-control" value="{$data['info'][0]['postcode']}" required/>
+                    </div>
+                    <button type="submit" class="btn btn-default">提交</button>
+                </div>
+            </form>
+</div>
+</div>
+<if condition="$sex eq 1">
+    <script>$("input[name='Sex']").get(0).checked = true;    </script>
+<elseif condition="$sex eq 2"/>
+    <script>$("input[name='Sex']").get(1).checked = true;    </script>
+<elseif condition="$sex eq 3"/>
+    <script>$("input[name='Sex']").get(2).checked = true;    </script>
+</if>
+</if>
+</block>

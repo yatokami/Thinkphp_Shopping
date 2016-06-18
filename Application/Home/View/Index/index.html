@@ -8,6 +8,11 @@
         <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
         </p>
+        <form id="form1" action="{:U('Index/search')}" method="get">
+          <div class="input-group">
+          <input type="text" name="search_name" class="form-control input-lg"><span class="input-group-addon btn btn-primary" onclick="document.getElementById('form1').submit();">搜索</span>
+          </div>
+        </form>
         <div class="jumbotron" style="background-color:white">
             <h3>端午大放送</h3>
             <div class="scroll">
@@ -38,7 +43,7 @@
                     <div class="caption">
                         <h4>商品名称:{$vo.goods_name}</h4>
                         <p>单价:{$vo.price}</p>
-                        <p><a href="" class="btn btn-primary" role="button">点击查看详情</a></p>
+                        <p><a href='{:U('Index/good_info', array('goods_id' => $vo['goods_id']))}' class="btn btn-primary" role="button">点击查看详情</a></p>
                     </div>
                 </div>
             </div>
