@@ -70,7 +70,7 @@
                 </li>
                 <li><a href="<?php echo U('User/cart');?>">购物车</a></li><?php endif; ?>
             <li><a href="<?php echo U('Index/index');?>">主页</a></li>
-            <li><a href="#contact">联系客服</a></li>
+            <li><a href="<?php echo U('Index/server_center');?>">联系客服</a></li>
         </ul>
     </div>
  </nav>

@@ -7,11 +7,11 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/admin/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/Public/content/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/Public/content/css/ionicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="/Public/dist/css/AdminLTE.min.css" />
-    <link rel="stylesheet" type="text/css" href="/Public/plugins/iCheck/square/blue.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/admin/dist/css/AdminLTE.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/admin/plugins/iCheck/square/blue.css" />
 
 </head>
 <body class="hold-transition login-page">
@@ -39,9 +39,9 @@
         </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
 
-    <script type="text/javascript" src="/Public/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/Public/plugins/iCheck/icheck.min.js"></script>
+    <script type="text/javascript" src="/Public/admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/Public/admin/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Public/admin/plugins/iCheck/icheck.min.js"></script>
 
     <script>
       $(function () {

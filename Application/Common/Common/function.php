@@ -26,4 +26,22 @@ function check_verify($code, $id = ""){
     $verify = new \Think\Verify(); 
     return $verify->check($code, $id); 
 } 
+
+function finddir($filename, &$dirnum, &$filenum){
+    $open=opendir($filename);
+    readdir($open);
+    readdir($open);
+    while($newfile=readdir($open)){
+        //echo readdir($open);
+        $new_dir=$filename."/".$newfile;
+        if(is_dir($new_dir)){
+            finddir($new_dir, $dirnum, $filenum);
+            $dirnum++;    
+        }else{
+            $filenum++;
+        }
+    }
+    return $dirnum;
+    closedir($open);
+}
 ?>

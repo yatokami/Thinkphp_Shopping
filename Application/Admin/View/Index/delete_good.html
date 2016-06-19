@@ -1,0 +1,121 @@
+<extend name="./Application/Admin/View/layout.html" />
+
+<block name="content">
+<div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                商品管理
+                <small>商品删除</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
+                <li class="active">商品管理</li>
+                <li class="active">商品删除</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">商品删除</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                   <form action="{:U('Index/good')}" method="get">
+                                    <div class="col-sm-6">
+                                        <div id="example1_filter" class="dataTables_filter">
+                                        	<input type="hidden" name="action" value="delete">
+                                            <label>根据商品名查询:<input id="searchtxt" name="GoodsName" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label><input id="search" type="submit" class="btn btn-block btn-info" style="width:70px;" value="查询">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>手机编号</th>
+                                        <th>手机型号</th>
+                                        <th>上架日期</th>
+                                        <th>删除</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <volist name="data.goods" id="vo">
+                                            <tr role="row" class="odd">
+                                                <td>{$vo.goods_id}</td>
+	                                            <td>{$vo.goods_name}</td>
+	                                            <td>{$vo.add_date|date="y年m月d日h时m分s秒",###}</td>
+                                                <td><button name="{$vo.goods_id}" type="submit" class="btn btn-primary" onclick="delete_good(this)">删除</button></td>
+                                            </tr>
+                                        </volist>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
+                                        总共查到 {$goods_count} 条数据
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                    </div>
+                                    <ul class="pagination">
+										{$page}
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
+</block>
+
+<block name="script">
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": false,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": false,
+            "info": false,
+            "autoWidth": true
+        });
+    });
+    function delete_good(obj) {
+        var GoodsID = obj.name
+        var data = { "goods_id": GoodsID }
+
+        if (GoodsID != "") {
+            $.ajax({
+                url: "{:U('User/delete_good')}",
+                type: "POST",
+                data: data,
+                success: function (data) {
+                    data = JSON.stringify(data)
+                    if (data == 1) {
+                        alert("删除成功")
+                        location.reload();
+                    } else {
+                        alert("删除失败")
+                    }
+                },
+                error: function () {
+                	alert('删除时出现异常')
+                }
+            })
+        } else {
+            alert("删除失败");
+        }
+    }
+    </script>
+</block>

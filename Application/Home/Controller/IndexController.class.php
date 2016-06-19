@@ -15,13 +15,18 @@ class IndexController extends Controller {
         $type_id = I('get.type_id');
 
         if(empty($type_id)) {
-            $goods = $Goods->select();
-            $indexs = getrandom(count($goods));
-            for($i = 0; $i < count($indexs); $i++) {
-                $goodss[$i] = $Goods
-                            ->where(['goods_id' => $indexs[$i]])
-                            ->find();
-            }
+            $goodss = $Goods
+                        ->join('wellbad ON goods.goods_id = wellbad.goods_id')
+                        ->order('wells DESC')
+                        ->limit(6)
+                        ->select();
+            // $count = $Goods->count();
+            // $indexs = getrandom($count);
+            // for($i = 0; $i < count($indexs); $i++) {
+            //     $goodss[$i] = $Goods
+            //                 ->where(['goods_id' => $indexs[$i]])
+            //                 ->find();
+            // }
             $data['goods'] = $goodss;
         } else {
             $type_id = I('get.type_id');

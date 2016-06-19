@@ -149,6 +149,7 @@
             </div>
         </div>
         <div class="row">
+        <h3>每日最佳商品</h3>
         <?php if(is_array($data["goods"])): $i = 0; $__LIST__ = $data["goods"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <img src="/Public/images/<?php echo ($vo["type_id"]); ?>/<?php echo ($vo["goods_imgsrc"]); ?>" class="img-rounded" style="height: 200px; width: 100%; display: block;" alt="...">

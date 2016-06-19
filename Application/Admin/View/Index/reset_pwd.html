@@ -1,0 +1,113 @@
+<extend name="./Application/Admin/View/layout.html" />
+
+<block name="content">
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            用户管理
+            <small>用户密码重置</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
+            <li class="active">用户管理</li>
+            <li class="active">用户密码重置</li>
+        </ol>
+    </section>
+
+     <section class="content">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">用户信息表</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <form action="{:U('Index/reset_pwd')}" method="post">
+                                <div class="col-sm-6">
+                                    <div id="example1_filter" class="dataTables_filter">
+                                        <label>根据用户名查询:<input id="searchtxt" name="Uname" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label><button id="search" type="submit" class="btn btn-block btn-info" style="width:70px;">查询</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>    
+                               
+                            <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>用户名</th>
+                                        <th>重置按钮</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <volist name="data.users" id="vo">
+                                        <tr role="row" class="odd">
+                                            <td>{$vo.uname}</td>
+                                            <td><button name="{$vo.uname}" class="btn btn-primary" onclick="reset_pwd(this)">重置</button></td>
+                                        </tr>
+                                    </volist>
+                                </tbody>
+                            </table>
+                     
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
+                                        总共有{$user_count}个用户
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                    </div>
+                                    <ul class="pagination">
+										{$page}
+                                    </ul>
+                                </div>
+                            </div>
+                           
+                        </div>
+                </div>
+            </div>
+        </div>
+      
+    </section><!-- /.content -->
+</div>
+</block>
+
+<block name="script">
+<script>
+    $(function () {
+        $("#example1").DataTable()
+        $('#example2').DataTable({
+            "paging": false,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": false,
+            "info": false,
+            "autoWidth": false
+        })
+    })
+
+    function reset_pwd(obj) {
+        var Uname = obj.name
+        var data = {'Uname': Uname}
+        $.ajax({
+            url: "{:U('User/reset_pwd')}",
+            type: "POST",
+            data: data,
+            success: function (data) {
+                data = JSON.stringify(data)
+                if (data == 1) {
+                    alert("重置成功")
+                } else {
+                    alert("重置失败")
+                }
+            },
+            error: function () {
+                alert('重置出现异常')
+            }
+        })
+    }
+</script>
+</block>

@@ -1,0 +1,100 @@
+<extend name="./Application/Admin/View/layout.html" />
+
+<block name="content">
+  <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                商品管理
+                <small>商品信息查看</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
+                <li class="active">商品管理</li>
+                <li class="active">商品信息查看</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">商品信息表</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                <form action="{:U('Index/good')}" method="get">
+                                    <div class="col-sm-6">
+                                        <div id="example1_filter" class="dataTables_filter">
+                                        	<input type="hidden" name="action" value="select">
+                                            <label>根据商品名查询:<input id="searchtxt" name="GoodsName" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label><button id="search" type="submit" class="btn btn-block btn-info" style="width:70px;">查询</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>商品编号</th>
+                                        <th>商品型号</th>
+                                        <th>商品价格</th>
+                                        <th>商品图片</th>
+                                        <th>入库时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <volist name="data.goods" id="vo">
+                                        <tr role="row" class="odd">
+                                            <td>{$vo.goods_id}</td>
+                                            <td>{$vo.goods_name}</td>
+                                            <td>{$vo.price}</td>
+                                            <td><img style="height:100px; width:100px" class="img-responsive img-rounded" src="__PUBLIC__/images/{$vo.type_id}/{$vo.goods_imgsrc}" /></td>
+                                            <td>{$vo.add_date|date="y年m月d日h时m分s秒",###}</td>
+                                        </tr>
+                                    </volist>
+                                </tbody>
+                            </table>
+
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
+                                        总共有 {$goods_count} 件商品
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                    </div>
+                                    <ul class="pagination">
+										{$page}
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
+</block>
+
+<block name="script">
+<script>
+    $(function () {
+        $("#example1").DataTable();
+        $('#example2').DataTable({
+            "paging": false,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": false,
+            "info": false,
+            "autoWidth": true
+        });
+    });
+    </script>
+</block>
