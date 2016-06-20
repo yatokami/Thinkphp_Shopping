@@ -131,10 +131,10 @@
                     <li class="<?php echo ($order_info_active); ?>"><a href="<?php echo U('Index/order_info');?>"><i class="fa fa-circle-o"></i>用户订单详情</a></li>
                 </ul>
             </li>
-            <li class="<?php echo ($comment_active); ?> treeview">
+            <li class="<?php echo ($cmt_active); ?> treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>评论管理</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i>删除评论</a></li>
+                    <li class="<?php echo ($cmt_del_active); ?>"><a href="<?php echo U('Index/comment');?>"><i class="fa fa-circle-o"></i>删除评论</a></li>
                 </ul>
             </li>
             <li class="treeview">

@@ -1,0 +1,143 @@
+<extend name="./Application/Admin/View/layout.html" />
+
+<block name="content">
+<div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                评论管理
+                <small>评论删除</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
+                <li class="active">评论管理</li>
+                <li class="active">评论删除</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">评论删除</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                   <form action="{:U('Index/comment')}" method="get">
+                                    <div class="col-sm-6">
+                                        <div id="example1_filter" class="dataTables_filter">
+                                        	<input type="hidden" name="action" value="delete">
+                                            <label>根据用户名查询:<input id="searchtxt" name="uname" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label><input id="search" type="submit" class="btn btn-block btn-info" style="width:70px;" value="查询">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th><input id="CheckAll" type="checkbox">评论编号</th>
+                                        <th>评论商品</th>
+                                        <th>评论用户</th>
+                                        <th>评论内容</th>
+                                        <th>评论日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <volist name="data.cmt" id="vo">
+                                            <tr role="row" class="odd">
+                                                <td><input data-id="{$vo.cmt_id}" data-index="{++$a}"name="chkItem" class="li-checkbox input" type="checkbox" />{$vo.cmt_id}</td>
+	                                            <td>{$vo.goods_name}</td>
+	                                            <td>{$vo.uname}</td>
+	                                            <td>{$vo.cmt_content}</td>
+	                                            <td>{$vo.add_date|date="y年m月d日h时m分s秒",###}</td>
+                                            </tr>
+                                        </volist>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
+                                    <button id="delete" name="delete" class="btn btn-primary" onclick="action(this)">删除</button>
+                                        总共查到 {$cmt_count} 条数据
+                                    </div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                    </div>
+                                    <ul class="pagination">
+										{$page}
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
+</block>
+
+<block name="script">
+<script type="text/javascript">
+	$(function () {
+        $("#example1").DataTable()
+        $('#example2').DataTable({
+            "paging": false,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": false,
+            "info": false,
+            "autoWidth": true
+        })
+    })
+
+	 //checkbox 单选事件
+        $('input[name="chkItem"]:checkbox').click(function () {
+            var isCheck = $('input[name="chkItem"]:not(:checked)').length ? false : true
+            $('#CheckAll').prop("checked", isCheck)
+        });
+
+        //checkbox 全选事件
+        $('#CheckAll').click(function () {
+            var self = $(this)
+            $('input[name="chkItem"]').each(function () {
+                $(this).prop("checked", self.is(':checked'))
+            })
+        })
+
+        function action(obj) {
+        var action = obj.name
+        var datas = []
+        $('input[name="chkItem"]:checked').each(function () {
+            var self = $(this),
+                    cmt_id = self.attr('data-id')
+            var row = {"cmt_id": cmt_id}
+            datas.push(row)
+        })
+
+        data = {"data": datas , "action" : action}
+        console.log(data)
+        $.ajax({
+            type: 'post',
+            url: "{:U('User/action_cmt')}",
+            data: data,
+            success: function (data) {
+                console.log(data);
+                if(data > 1) {
+                    alert('操作成功')
+                } else {
+                    alert('操作失败')
+                }
+                location.reload();
+            },
+            error: function (data, status) {
+               alert('操作时出现异常')
+            }
+        });
+    }
+</script>
+</block>

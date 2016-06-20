@@ -52,16 +52,16 @@
                     <li class="{$order_info_active}"><a href="{:U('Index/order_info')}"><i class="fa fa-circle-o"></i>用户订单详情</a></li>
                 </ul>
             </li>
-            <li class="{$comment_active} treeview">
+            <li class="{$cmt_active} treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>评论管理</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i>删除评论</a></li>
+                    <li class="{$cmt_del_active}"><a href="{:U('Index/comment')}"><i class="fa fa-circle-o"></i>删除评论</a></li>
                 </ul>
             </li>
-            <li class="treeview">
+            <li class="{$bul_active} treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>商城公告</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i>发布新公告</a></li>
+                    <li class="{$bul_add_active}"><a href="{:U('Index/add_bulletin')}"><i class="fa fa-circle-o"></i>发布新公告</a></li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

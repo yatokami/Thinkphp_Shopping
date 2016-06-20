@@ -166,6 +166,41 @@ class IndexController extends Controller {
         $this->display();
     }
 
+    //显示评论管理页面
+    public function comment() {
+        $uname = I('uname');
+        $map['uname'] = array('like', "%$uname%");
+        $Cmt = M('comment');
+
+        $count = $Cmt
+                ->join('goods ON comment.goods_id = goods.goods_id')
+                ->where($map)
+                ->count();
+        $page = new \Think\PageBootcss($count, 10);
+        $limit = $page->firstRow.','.$page->listRows;
+        $data['cmt'] = $Cmt
+                    ->join('goods ON comment.goods_id = goods.goods_id')
+                    ->where($map)
+                    ->order('cmt_id asc')
+                    ->limit($limit)
+                    ->select();
+
+        $this->page = $page->show();
+        $this->assign('data', $data);
+        $this->cmt_count = $count;
+        $this->cmt_del_active = "active";
+        $this->cmt_active = "active";
+        $this->uname = session('admin_name');
+        $this->display('delete_comment');
+    }
+
+    //添加新商品页面
+    public function add_bulletin() {
+        $this->uname = session('admin_name');
+        $this->bul_active = "active";
+        $this->bul_add_active = "active";
+        $this->display();
+    }
 
     // public function insert() {
     //     // $Users = M('users');

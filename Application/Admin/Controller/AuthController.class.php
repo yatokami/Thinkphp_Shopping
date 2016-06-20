@@ -10,7 +10,9 @@ class AuthController extends Controller {
         $data['pwd'] = I('AdminPwd');
         $Admin = M('admin');
 
-        $count = $Admin->where($data)->count();
+        $count = $Admin
+                ->where($data)
+                ->count();
         if($count == 1) {
             session('admin_name', $data['name']);
             $this->success('登录成功等待进入主页','/Admin/Index/index');
@@ -19,4 +21,8 @@ class AuthController extends Controller {
         }
     }
 
+    public function logout() {
+        session(null);
+        $this->success('退出成功等待重新登录','../Auth/login');
+    }
 } 

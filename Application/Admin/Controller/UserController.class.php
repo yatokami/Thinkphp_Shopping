@@ -162,7 +162,7 @@ class UserController extends Controller {
     }
 
     //操作订单列表
-    public function  action_order() {
+    public function action_order() {
         $order_ids = I('data');
         $action = I('action');
         $Orders = M('orders');
@@ -183,5 +183,50 @@ class UserController extends Controller {
             }
         }
         $this->ajaxReturn($count);
+    }
+
+    //操作评论列表
+    public function action_cmt() {
+        $cmt_ids = I('data');
+        $action = I('action');
+        $Cmt = M('comment');
+
+        if($action == "delete") {
+            for($i = 0; $i < count($cmt_ids); $i++) {
+                $count += $Cmt
+                        ->where(['cmt_id' => $cmt_ids[$i]['cmt_id']])
+                        ->delete();
+            }
+        }
+        $this->ajaxReturn($count);
+    }
+
+    //添加新商品
+    public function add_bulletin() {
+        $data['bul_title'] = I('BulletinTitle');
+        $data['bul_content'] = I('BulletinContent');
+        $data['bul_startime'] = time();
+
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     6145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =      './Public/bulletin/'; // 设置附件上传根目录
+        $upload->replace   =     true;
+        $upload->autoSub = false;
+        $upload->savePath  =     ''; // 设置附件上传（子）目录
+
+        $info   =   $upload->uploadOne($_FILES['BulletiImg']);
+        if(!$info) {// 上传错误提示错误信息
+            $this->error($upload->getError());
+        }else{// 上传成功 获取上传文件信息
+            $data['bul_imgsrc'] = $info['savename'];
+            $count = M('bulletin')
+                    ->add($data);
+        }
+        if($count > 0) {
+            $this->success('发布新公告成功等待页面回跳', '/admin/Index/add_bulletin');
+        } else {
+            $this->error('发布新公告成功等待页面回跳', '/admin/Index/add_bulletin');
+        }
     }
 }
