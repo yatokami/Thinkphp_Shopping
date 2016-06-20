@@ -75,8 +75,7 @@ class IndexController extends Controller {
         $this->display();
     }
 
-
-    //显示更新商品信息界面
+    //显示商品信息界面
     public function good() {
         $Goods = M('goods');
         $goods_name = I('get.GoodsName');
@@ -108,6 +107,63 @@ class IndexController extends Controller {
             $this->goods_delete_active = "active";
             $this->display('delete_good');
         }
+    }
+
+    //显示订单信息页面
+    public function order_info() {
+        $Orders = M('orders');
+        $uname = I('uname');
+        $order_id = I('order_id');
+        $map['uname'] = array('like', "%$uname%");
+        if($order_id != "") {
+            $map['order_id'] = $order_id;
+        }
+        $count = $Orders
+                ->where($map)
+                ->count();
+        $page = new \Think\PageBootcss($count, 10);
+        $limit = $page->firstRow.','.$page->listRows;
+        $data['orders'] = $Orders
+                        ->where($map)
+                        ->order('order_id asc')
+                        ->limit($limit)
+                        ->select();
+
+        $this->page = $page->show();
+        $this->order_active = "active";
+        $this->order_info_active = "active";
+        $this->order_count = $count;
+       $this->uname = session('admin_name');
+        $this->assign('data', $data);
+        $this->display();
+    }
+
+    //显示订单详情页面
+    public function order_info_view() {
+        $order_id = I('order_id');
+        $Orders = M('orders');
+        $Order_detail = M('orderdetail');
+        if($order_id > $Orders->count()) {
+            $order_id = $Orders->count();
+        } else if($order_id < 1){
+            $order_id = 1;
+        }
+        $order = $Orders
+                ->where(['order_id' => $order_id])
+                ->find();
+
+        $order_detail = $Order_detail
+                        ->join('goods ON orderdetail.goods_id = goods.goods_id')
+                        ->where(['order_id' => $order_id])
+                        ->select();
+
+        $this->order_active = "active";
+        $this->order_info_active = "active";
+        $this->order_detail = $order_detail;
+        $this->assign('data', $order);
+        $this->order_id = $order_id;
+        $this->uname = session('admin_name');
+        $this->display();
     }
 
 

@@ -15,19 +15,12 @@ class IndexController extends Controller {
         $type_id = I('get.type_id');
 
         if(empty($type_id)) {
-            $goodss = $Goods
+            $goods = $Goods
                         ->join('wellbad ON goods.goods_id = wellbad.goods_id')
                         ->order('wells DESC')
                         ->limit(6)
                         ->select();
-            // $count = $Goods->count();
-            // $indexs = getrandom($count);
-            // for($i = 0; $i < count($indexs); $i++) {
-            //     $goodss[$i] = $Goods
-            //                 ->where(['goods_id' => $indexs[$i]])
-            //                 ->find();
-            // }
-            $data['goods'] = $goodss;
+            $data['goods'] = $goods;
         } else {
             $type_id = I('get.type_id');
             $map['type_id'] = $type_id;
@@ -36,13 +29,13 @@ class IndexController extends Controller {
             $count =$Goods->where($map)->count();
             $page = new \Think\PageBootcss($count, 6);
             $limit = $page->firstRow.','.$page->listRows;
-            $goodss = $Goods
+            $goods = $Goods
                         ->where($map)
                         ->order('goods_id DESC')
                         ->limit($limit)
                         ->select();
 
-            $data['goods'] = $goodss;
+            $data['goods'] = $goods;
             $this->page = $page->show();
           
         }
@@ -79,7 +72,7 @@ class IndexController extends Controller {
         $wellbad = $WellBad
                     ->where($map)
                     ->find();
-
+                    
         $this->page = $page->show();
         $this->comment = $comment;
         $this->good = $good;

@@ -122,15 +122,13 @@
                     <li class="<?php echo ($goods_add_active); ?>"><a href="<?php echo U('Index/add_good');?>"><i class="fa fa-circle-o"></i>新商品入库</a></li>
                     <li class="<?php echo ($goods_update_active); ?>"><a href='<?php echo U('Index/good', array('action' => 'update'));?>'><i class="fa fa-circle-o"></i>修改商品信息</a></li>
                     <li class="<?php echo ($goods_select_active); ?>"><a href='<?php echo U('Index/good', array('action' => 'select'));?>'><i class="fa fa-circle-o"></i>查询商品信息</a></li>
-                    <li class="<?php echo ($goods_delete_active); ?>"><a href="#"><i class="fa fa-circle-o"></i>删除旧商品</a></li>
+                    <li class="<?php echo ($goods_delete_active); ?>"><a href='<?php echo U('Index/good', array('action' => 'delete'));?>'><i class="fa fa-circle-o"></i>删除旧商品</a></li>
                 </ul>
             </li>
             <li class="<?php echo ($order_active); ?> treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>订单管理</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i>已审核订单</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i>未审核订单</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i>查询用户订单详情</a></li>
+                    <li class="<?php echo ($order_info_active); ?>"><a href="<?php echo U('Index/order_info');?>"><i class="fa fa-circle-o"></i>用户订单详情</a></li>
                 </ul>
             </li>
             <li class="<?php echo ($comment_active); ?> treeview">

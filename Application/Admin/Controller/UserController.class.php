@@ -21,6 +21,7 @@ class UserController extends Controller {
         $btn_sub = I('BtnSubmit');
         $data['goods_name'] = I('GoodsName');
         $data['price'] = I('Price');
+
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     3145728 ;// 设置附件上传大小
         $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -28,11 +29,14 @@ class UserController extends Controller {
         $upload->autoSub = false;
         $upload->saveName = $data['goods_name'];
         $upload->replace = true;
+
         if($btn_sub == "提交1") {
             $data['type_id'] = I('TypeID');
+
             $upload->savePath  =      $data['type_id'].'/'; // 设置附件上传（子）目录
             // 上传单个文件 
             $info   =   $upload->uploadOne($_FILES['GoodsPicture']);
+
             if(!$info) {// 上传错误提示错误信息
                 $this->error($upload->getError());
             }else{// 上传成功 获取上传文件信息
@@ -126,4 +130,58 @@ class UserController extends Controller {
         $this->ajaxReturn($count);
     }
 
+    //修改订单信息
+    public function edit_order() {
+        $data['order_id'] = I('order_id');
+        $data['rec_name'] = I('rec_name');
+        $data['rec_tel'] = I('rec_tel');
+        $data['address'] = I('address');
+        $data['postcode'] = I('postcode');
+        $data['email'] = I('email');
+        $Orders = M('orders');
+        $map['order_id'] = $data['order_id'];
+
+        $count = $Orders
+                ->where($map)
+                ->save($data);
+
+        $this->ajaxReturn($count);
+    }
+
+    //删除订单
+    public function delete_order() {
+        $order_id = I('order_id');
+        $Orders = M('orders');
+        $map['order_id'] = $order_id;
+
+        $count = $Orders
+                ->where($map)
+                ->delete();
+
+        $this->ajaxReturn($count);
+    }
+
+    //操作订单列表
+    public function  action_order() {
+        $order_ids = I('data');
+        $action = I('action');
+        $Orders = M('orders');
+
+        if($action == "pass") {
+            $data['order_status'] = "已审核";
+            for($i = 0; $i < count($order_ids); $i++) {
+                $count += $Orders
+                        ->where(['order_id' => $order_ids[$i]['order_id']])
+                        ->save($data);
+            }
+        } else if($action == "cancel"){
+            $data['order_status'] = "未审核";
+            for($i = 0; $i < count($order_ids); $i++) {
+                $count += $Orders
+                        ->where(['order_id' => $order_ids[$i]['order_id']])
+                        ->save($data);
+            }
+        }
+        $this->ajaxReturn($count);
+    }
 }

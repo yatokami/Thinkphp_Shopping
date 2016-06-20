@@ -89,7 +89,7 @@
                     <h1>尊敬的 <?php echo ($data['uname']); ?></h1>
                 </div>
                 <div class="form-group">
-                    <label for="name">真实姓名</label><input type="text" name="RealName" class="form-control" value="<?php echo ($data['info'][0]['realname']); ?>" />
+                    <label for="name">真实姓名</label><input type="text" name="RealName" class="form-control" value="<?php echo ($data['info'][0]['realname']); ?>" required/>
                 </div>
                 <div class="form-group">
                     <label for="name">性别</label>
@@ -111,19 +111,19 @@
                     </div>
                     <div class="form-group">
                         <label for="name">电话</label>
-                        <input type="text" name="Tel" class="form-control" value="<?php echo ($data['info'][0]['tel']); ?>" />
+                        <input type="text" name="Tel" class="form-control" value="<?php echo ($data['info'][0]['tel']); ?>" required/>
                     </div>
                     <div class="form-group">
                         <label for="name">Email</label>
-                        <input type="text" name="Email" class="form-control" value="<?php echo ($data['info'][0]['email']); ?>" />
+                        <input type="text" name="Email" class="form-control" value="<?php echo ($data['info'][0]['email']); ?>" required/>
                     </div>
                     <div class="form-group">
                         <label for="name">Address</label>
-                        <input type="text" name="Address" class="form-control" value="<?php echo ($data['info'][0]['address']); ?>" />
+                        <input type="text" name="Address" class="form-control" value="<?php echo ($data['info'][0]['address']); ?>" required/>
                     </div>
                     <div class="form-group">
                         <label for="name">PostCode</label>
-                        <input type="text" name="PostCode" class="form-control" value="<?php echo ($data['info'][0]['postcode']); ?>" />
+                        <input type="text" name="PostCode" class="form-control" value="<?php echo ($data['info'][0]['postcode']); ?>" required/>
                     </div>
                     <button type="submit" class="btn btn-default">提交</button>
                 </div>

@@ -95,12 +95,12 @@
 
         .li-del {
             margin: 20px 0 0 30px;
-            width: 120px;
+            width: 115px;
         }
 
         .li-date {
             margin: 20px 0 0 30px;
-            width: 56px;
+            width: 58px;
         }
         .li-img {
             margin: 0 0 0 75px;

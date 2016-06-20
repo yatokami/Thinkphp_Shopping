@@ -148,87 +148,118 @@
     <!-- /.sidebar -->
 </aside>
         
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <h1>
-            用户管理
-            <small>用户信息查看</small>
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
-            <li class="active">用户管理</li>
-            <li class="active">用户信息查看</li>
-        </ol>
-    </section>
+ <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                订单管理
+                <small>订单详情</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
+                <li class="active">订单管理</li>
+                <li class="active"><a href="<?php echo U('Index/order_info');?>">订单列表</a></li>
+                <li class="active">订单详情</li>
+            </ol>
+        </section>
+         <section class="content">
 
-     <section class="content">
-
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="box">
-                    <div class="box-header">
-                        <h3 class="box-title">用户信息表</h3>
-                    </div><!-- /.box-header -->
-                    <div class="box-body">
-                        <div class="row">
-                            <form action="<?php echo U('Index/index');?>" method="post">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">订单详情</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
                                 <div class="col-sm-6">
                                     <div id="example1_filter" class="dataTables_filter">
-                                        <label>根据用户名查询:<input id="searchtxt" name="Uname" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label><button id="search" type="submit" class="btn btn-block btn-info" style="width:70px;">查询</button>
+                                    	<a href='<?php echo U('Index/order_info_view', array('order_id' => $order_id-1));?>' name="pre" class="btn btn-info">上一条</a>
+                                    	<a href='<?php echo U('Index/order_info_view', array('order_id' => $order_id+1));?>' name="next" class="btn btn-info">下一条</a>
                                     </div>
-                                </div>
-                            </form>
-                        </div>    
-                               
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>用户名</th>
-                                        <th>性别</th>
-                                        <th>真实姓名</th>
-                                        <th>电话</th>
-                                        <th>邮箱</th>
-                                        <th>地址</th>
-                                        <th>注册时间</th>
-                              
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if(is_array($data["users"])): $i = 0; $__LIST__ = $data["users"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="odd">
-                                            <td><?php echo ($vo["uname"]); ?></td>
-                                            <td><?php echo ($vo["sex"]); ?></td>
-                                            <td><?php echo ($vo["realname"]); ?></td>
-                                            <td><?php echo ($vo["tel"]); ?></td>
-                                            <td><?php echo ($vo["email"]); ?></td>
-                                            <td><?php echo ($vo["address"]); ?></td>
-                                            <td><?php echo (date('Y-m-d H:i:s', $vo["reg_time"])); ?></td>  
-                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </tbody>
-                            </table>
-                     
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
-                                        总共有<?php echo ($user_count); ?>个用户
-                                    </div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
-                                    </div>
-                                    <ul class="pagination">
-										<?php echo ($page); ?>
-                                    </ul>
                                 </div>
                             </div>
-                           
+							<?php if($data != null): ?><table id="example2" class="table table-bordered table-hover">       
+	                                <tbody>
+	                                	<tr role="row" class="odd" style="background-color: #ddd">
+	                               			<td colspan="4"  style="text-align:center;">订单基本信息</td>
+	                                    </tr>
+	                                    <tr role="row" class="odd">
+	                               			<td>订单号:</td>
+	                               			<td><?php echo ($data["order_id"]); ?></td>
+	                               			<td>订单状态:</td>
+	                               			<td><?php echo ($data["order_status"]); ?></td>
+	                                    </tr>
+	                                    <tr role="row" class="odd">
+	                               			<td>购货人:</td>
+	                               			<td><?php echo ($data["uname"]); ?></td>
+	                               			<td>下单时间:</td>
+	                               			<td><?php echo (date("y年m月d日h时m分s秒",$data["order_date"])); ?></td>
+	                                    </tr>
+	                                    <tr role="row" class="odd">
+	                               			<td>支付方式:</td>
+	                               			<td><?php echo ($data["paytype"]); ?></td>
+	                               			<td>付款状态:</td>
+	                               			<td><?php echo ($data["ispayed"]); ?></td>
+	                                    </tr>
+	                                    <tr role="row" class="odd" style="background-color: #ddd">
+	                               			<td colspan="4"  style="text-align:center;">收货人基本信息<input type="button" id="edit" class="btn btn-info" value="编辑"></td>
+	                                    </tr>
+	                                    <tr role="row" class="odd">
+	                               			<td>收货人:</td>
+	                               			<td><input id="rec_name" name="rec_name" style="border-style:none" type="text" value="<?php echo ($data["rec_name"]); ?>" readonly="true"></td>
+	                               			<td>电子邮件:</td>
+	                               			<td><input id="email" name="email" style="border-style:none" type="text" value="<?php echo ($data["email"]); ?>" readonly="true" ></td>
+	                                    </tr>
+	                                    <tr role="row" class="odd">
+	                               			<td>收货地址:</td>
+	                               			<td><input id="address" name="address" style="border-style:none" type="text" value="<?php echo ($data["address"]); ?>" readonly="true"></td>
+	                               			<td>邮编:</td>
+	                               			<td><input id="postcode" name="postcode" style="border-style:none" type="text" value="<?php echo ($data["postcode"]); ?>" readonly="true"></td>
+	                                    </tr>
+	                                    <tr role="row" class="odd">
+	                               			<td>电话:</td>
+	                               			<td><input id="rec_tel" name="rec_tel" style="border-style:none" type="text" value="<?php echo ($data["rec_tel"]); ?>" readonly="true"></td>
+	                               			<td><button onclick="edit()" class="btn btn-info">修改</button></td>
+	                               			<td><input type="hidden" id="order_id" value="<?php echo ($data["order_id"]); ?>"></td>
+	                                    </tr>
+	                                    <tr role="row" class="odd" style="background-color: #ddd">
+	                               			<td colspan="4"  style="text-align:center;">购买商品信息</td>
+	                                    </tr>
+	                                    <tr role="row" class="odd">
+	                                        <td>商品型号</td>
+	                                        <td>商品数量</td>
+	                                        <td>商品单价</td>
+	                                        <td>商品总价</td>
+	                                    </tr>
+	                                    <?php if(is_array($order_detail)): $i = 0; $__LIST__ = $order_detail;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="odd">
+	                                        <td><?php echo ($vo["goods_name"]); ?></td>
+	                                        <td><?php echo ($vo["num"]); ?></td>
+	                                        <td><?php echo ($vo["price"]); ?></td>
+	                                        <td><?php echo ($vo["totalmoney"]); ?></td>
+	                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+	                                    <tr role="row" class="odd">
+	                                        <td></td>
+	                                        <td></td>
+	                                        <td>合计:</td>
+	                                        <td><?php echo ($data["totalmoney"]); ?></td>
+	                                    </tr>
+	                                </tbody>
+	                            </table>
+                            <?php else: ?>
+                             <table id="example2" class="table table-bordered table-hover">
+                             <tbody>
+                              <tr role="row" class="odd">
+                              <td>本页面并没有什么东西请往前或后翻</td>
+                              </tr>
+                             </tbody>
+                             </table><?php endif; ?>
                         </div>
+                    </div>
                 </div>
             </div>
-        </div>
-      
-    </section><!-- /.content -->
-</div>
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
 
     </div>
 
@@ -242,17 +273,51 @@
     <script type="text/javascript" src="/Public/admin/dist/js/demo.js"></script>
     
 <script>
-    $(function () {
-        $("#example1").DataTable();
-        $('#example2').DataTable({
-            "paging": false,
-            "lengthChange": false,
-            "searching": false,
-            "ordering": false,
-            "info": false,
-            "autoWidth": true
-        });
-    });
+
+	$('#edit').click(function () {
+		if($('#edit').val() == "编辑") {
+			$('td input').each(function () {
+	            $(this).removeAttr("readonly")
+	            $(this).css("border-style","")
+	            $('#edit').attr("value", "取消编辑")
+	    	})
+		} else {
+			$('td input').each(function () {
+	            $(this).attr("readonly","readonly")
+	            $(this).css("border-style","none")
+	            $('#edit').attr("value", "编辑")
+	    	})
+		}
+	})
+
+	function edit() {
+		var data = {
+			'order_id' : $('#order_id').val(),
+			'rec_name' : $('#rec_name').val(),
+			'email' : $('#email').val(),
+			'address' : $('#address').val(),
+			'postcode' : $('#postcode').val(),
+			'rec_tel' : $('#rec_tel').val()
+		}
+
+		$.ajax({
+			type: 'post',
+            url: "<?php echo U('User/edit_order');?>",
+            data: data,
+            success: function (data) {
+        	var result = $.parseJSON(data)
+                if(result == 1) {
+                	alert('修改成功')
+    		        location.reload()
+                } else {
+                	alert('修改失败')
+                }
+            },
+            error: function (data, status) {
+               alert('修改时出现异常')
+            }
+		})
+	}
 </script>
 
 

@@ -2162,3 +2162,632 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005596s ]
 INFO: [ app_end ] --END-- [ RunTime:0.005659s ]
 
+[ 2016-06-19T20:38:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003738s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003533s ]
+
+[ 2016-06-19T21:25:36+08:00 ] 127.0.0.1 /Home/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: name G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003556s ]
+
+[ 2016-06-19T21:25:42+08:00 ] 127.0.0.1 /Home/Auth/getlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003251s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `users` WHERE `uname` = 'a12345' AND `pwd` = '670b14728ad9902aecba32e22fa4f6bd'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003100s ]
+
+[ 2016-06-19T21:26:13+08:00 ] 127.0.0.1 /Home/Auth/getlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003329s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `users` WHERE `uname` = 'a12345' AND `pwd` = 'af8f9dffa5d420fbc249141645b962ee'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003128s ]
+
+[ 2016-06-19T21:26:15+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003360s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003116s ]
+
+[ 2016-06-19T21:26:17+08:00 ] 127.0.0.1 /Home/Index/good_info/goods_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007627s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `wellbad` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `comment` WHERE `goods_id` = 9 ORDER BY cmt_id DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wellbad` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003595s ]
+
+[ 2016-06-19T21:26:20+08:00 ] 127.0.0.1 /Home/User/add_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003223s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0066s ]
+SQL: SELECT `uid` FROM `users` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `buyinfo` (`num`,`goods_id`,`uname`,`uid`,`price`,`buy_date`) VALUES ('1','9','a12345','4','4700','1466342780') [ RunTime:0.0004s ]
+
+[ 2016-06-19T21:26:22+08:00 ] 127.0.0.1 /Home/Index/good_info/goods_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003384s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `wellbad` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `comment` WHERE `goods_id` = 9 ORDER BY cmt_id DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wellbad` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003277s ]
+
+[ 2016-06-19T21:26:24+08:00 ] 127.0.0.1 /Home/User/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003268s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' ORDER BY buy_id DESC LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003154s ]
+
+[ 2016-06-19T21:26:27+08:00 ] 127.0.0.1 /Home/User/clear.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005593s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0066s ]
+SQL: SELECT `price` FROM `goods` WHERE `goods_id` = 9 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: totalmoney G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 112 行.
+SQL: SELECT `uid` FROM `users` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `userinfo` WHERE `uid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `orders` (`uname`,`uid`,`totalmoney`,`order_date`,`order_status`,`paytype`,`ispayed`,`rec_name`,`rec_tel`,`address`,`postcode`,`email`) VALUES ('a12345','4','4700','1466342787','未接单','支付宝付款','已付款','xiuji','110120119','社王町114','350016','120110119@qq.com') [ RunTime:0.0004s ]
+SQL: INSERT INTO `orderdetail` (`order_id`,`num`,`goods_id`,`totalmoney`) VALUES ('1','1','9','4700') [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: count G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 139 行.
+SQL: DELETE FROM `buyinfo` WHERE `buy_id` = 47 [ RunTime:0.0002s ]
+
+[ 2016-06-19T21:26:27+08:00 ] 127.0.0.1 /Home/User/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003739s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' ORDER BY buy_id DESC LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003178s ]
+
+[ 2016-06-19T21:26:49+08:00 ] 127.0.0.1 /Home/User/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003058s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0096s ]
+SQL: SELECT `uid` FROM `users` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `userinfo` WHERE `uid` = 4  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003057s ]
+
+[ 2016-06-19T21:26:51+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003175s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003182s ]
+
+[ 2016-06-19T21:26:52+08:00 ] 127.0.0.1 /Home/Index/good_info/goods_id/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003150s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `wellbad` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE `goods_id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `comment` WHERE `goods_id` = 43 ORDER BY cmt_id DESC LIMIT 0,6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wellbad` WHERE `goods_id` = 43 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004004s ]
+
+[ 2016-06-19T21:26:54+08:00 ] 127.0.0.1 /Home/User/add_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003865s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0058s ]
+SQL: SELECT `uid` FROM `users` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `buyinfo` (`num`,`goods_id`,`uname`,`uid`,`price`,`buy_date`) VALUES ('1','43','a12345','4','1999','1466342814') [ RunTime:0.0002s ]
+
+[ 2016-06-19T21:26:55+08:00 ] 127.0.0.1 /Home/Index/good_info/goods_id/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003983s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `wellbad` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE `goods_id` = 43 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `comment` WHERE `goods_id` = 43 ORDER BY cmt_id DESC LIMIT 0,6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wellbad` WHERE `goods_id` = 43 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004162s ]
+
+[ 2016-06-19T21:26:55+08:00 ] 127.0.0.1 /Home/User/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003360s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' ORDER BY buy_id DESC LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003101s ]
+
+[ 2016-06-19T21:28:03+08:00 ] 127.0.0.1 /Home/User/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004389s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' ORDER BY buy_id DESC LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003780s ]
+
+[ 2016-06-19T21:28:10+08:00 ] 127.0.0.1 /Home/User/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004831s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' ORDER BY buy_id DESC LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003264s ]
+
+[ 2016-06-19T21:28:16+08:00 ] 127.0.0.1 /Home/User/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003267s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' ORDER BY buy_id DESC LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004887s ]
+
+[ 2016-06-19T21:28:21+08:00 ] 127.0.0.1 /Home/User/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003094s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0111s ]
+SQL: SELECT `uid` FROM `users` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `userinfo` WHERE `uid` = 4  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003559s ]
+
+[ 2016-06-19T21:28:22+08:00 ] 127.0.0.1 /Home/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004566s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orders` WHERE `uname` = 'a12345' ORDER BY order_id DESC LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT sum(num) FROM `orderdetail` WHERE `order_id` = 1 GROUP BY order_id LIMIT 1   [ RunTime:0.0141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003112s ]
+
+[ 2016-06-19T21:28:37+08:00 ] 127.0.0.1 /Home/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003134s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orders` WHERE `uname` = 'a12345' ORDER BY order_id DESC LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT sum(num) FROM `orderdetail` WHERE `order_id` = 1 GROUP BY order_id LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003920s ]
+
+[ 2016-06-19T21:28:41+08:00 ] 127.0.0.1 /Home/User/orderdetail/order_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004444s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goods` INNER JOIN orderdetail ON goods.goods_id = orderdetail.goods_id  WHERE `order_id` = '1'  [ RunTime:0.0268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003108s ]
+
+[ 2016-06-19T21:28:44+08:00 ] 127.0.0.1 /Home/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003160s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orders` WHERE `uname` = 'a12345' ORDER BY order_id DESC LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT sum(num) FROM `orderdetail` WHERE `order_id` = 1 GROUP BY order_id LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003304s ]
+
+[ 2016-06-19T21:28:47+08:00 ] 127.0.0.1 /Home/User/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003080s ]
+SQL: SHOW COLUMNS FROM `buyinfo` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `buyinfo` INNER JOIN goods ON goods.goods_id = buyinfo.goods_id  WHERE `uname` = 'a12345' ORDER BY buy_id DESC LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003893s ]
+
+[ 2016-06-19T21:28:50+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003415s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003118s ]
+
