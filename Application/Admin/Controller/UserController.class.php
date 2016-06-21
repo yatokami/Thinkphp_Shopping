@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class UserController extends Controller {
+class UserController extends BaseController {
     public function index(){
     }
 
@@ -228,5 +228,33 @@ class UserController extends Controller {
         } else {
             $this->error('发布新公告成功等待页面回跳', '/admin/Index/add_bulletin');
         }
+    }
+
+    //删除投诉
+    public function action_pro() {
+        $pro_ids = I('data');
+        $action = I('action');
+        $Problem = M('problem');
+
+        if($action == "delete") {
+            for($i = 0; $i < count($pro_ids); $i++) {
+                $count += $Problem
+                        ->where(['pro_id' => $pro_ids[$i]['pro_id']])
+                        ->delete();
+            }
+        }
+        $this->ajaxReturn($action);
+    }
+
+    //投诉问题回复
+    public function reply() {
+        $data['uname'] = I('uname');
+        $data['pro_id'] = I('pro_id');
+        $data['rep_content'] = I('reply_content');
+        $data['rep_time'] = time();
+        $Reply = M('reply');
+
+        $count = $Reply->add($data);
+        echo "<script>alert('回复成功');location.href='../index/pro_list'</script>";
     }
 }

@@ -37,7 +37,18 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success"><?php echo ($pro_count); ?></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have <?php echo ($pro_count); ?> messages</li>
+                  <li class="footer"><a href="<?php echo U('Index/pro_list');?>">See All Messages</a></li>
+                </ul>
+              </li><!-- /.messages-menu -->
+
                 <!-- User Account Menu -->
                 <li class="dropdown user user-menu">
                     <!-- Menu Toggle Button -->
@@ -52,8 +63,7 @@
                         <li class="user-header">
                             <img src="/Public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                             <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                <small>商城管理后台</small>
                             </p>
                         </li>
 
@@ -63,7 +73,7 @@
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
                             </div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                <a href="<?php echo U('Auth/logout');?>" class="btn btn-default btn-flat">Sign out</a>
                             </div>
                         </li>
                     </ul>

@@ -37,7 +37,18 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success"><?php echo ($pro_count); ?></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have <?php echo ($pro_count); ?> messages</li>
+                  <li class="footer"><a href="<?php echo U('Index/pro_list');?>">See All Messages</a></li>
+                </ul>
+              </li><!-- /.messages-menu -->
+
                 <!-- User Account Menu -->
                 <li class="dropdown user user-menu">
                     <!-- Menu Toggle Button -->
@@ -52,8 +63,7 @@
                         <li class="user-header">
                             <img src="/Public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                             <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                <small>商城管理后台</small>
                             </p>
                         </li>
 
@@ -63,7 +73,7 @@
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
                             </div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                <a href="<?php echo U('Auth/logout');?>" class="btn btn-default btn-flat">Sign out</a>
                             </div>
                         </li>
                     </ul>
@@ -128,21 +138,19 @@
             <li class="<?php echo ($order_active); ?> treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>订单管理</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i>已审核订单</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i>未审核订单</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i>查询用户订单详情</a></li>
+                    <li class="<?php echo ($order_info_active); ?>"><a href="<?php echo U('Index/order_info');?>"><i class="fa fa-circle-o"></i>用户订单详情</a></li>
                 </ul>
             </li>
-            <li class="<?php echo ($comment_active); ?> treeview">
+            <li class="<?php echo ($cmt_active); ?> treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>评论管理</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i>删除评论</a></li>
+                    <li class="<?php echo ($cmt_del_active); ?>"><a href="<?php echo U('Index/comment');?>"><i class="fa fa-circle-o"></i>删除评论</a></li>
                 </ul>
             </li>
-            <li class="treeview">
+            <li class="<?php echo ($bul_active); ?> treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>商城公告</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i>发布新公告</a></li>
+                    <li class="<?php echo ($bul_add_active); ?>"><a href="<?php echo U('Index/add_bulletin');?>"><i class="fa fa-circle-o"></i>发布新公告</a></li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

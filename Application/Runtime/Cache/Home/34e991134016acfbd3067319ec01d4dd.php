@@ -277,9 +277,7 @@
  
         var datas = []
         var k = 0
-        // var GoodsIDs = "";
-        // var Nums = "";
-        // var BuyIDs = "";
+
         var paytype = $("input[name='paytype']:checked").val()
         $('input[name="chkItem"]:checked').each(function () {
             var self = $(this),
@@ -287,13 +285,9 @@
                     GoodsID = self.attr('data-id'),
                     BuyID = self.attr('data-buyid')
             var Num = $('#Q' + index).val()
-            // GoodsIDs += GoodsID + ","
-            // Nums += Num + ","
-            // BuyIDs += BuyID + ","
             var row = {"goods_id": GoodsID, "num": Num, "buy_id": BuyID}
             datas.push(row)
         })
-        // datas = { "GoodsIDs": GoodsIDs, "Nums": Nums, "BuyIDs": BuyIDs }
         data = {"data": datas, "paytype": paytype}
         $.ajax({
             type: 'post',

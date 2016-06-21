@@ -301,14 +301,19 @@ class UserController extends BaseController {
     //用户提问
     public function sub_question() {
         $pro_content = I('post.pro_content');
-        $uname = session('uname');
-        $Problem = M('problem');
+        if(strlen($pro_content) <= 60) {
+            $uname = session('uname');
+            $Problem = M('problem');
 
-        $data['uname'] = $uname;
-        $data['pro_content'] = $pro_content;
+            $data['uname'] = $uname;
+            $data['pro_content'] = $pro_content;
+            $data['pro_time'] = time();
 
-        $count = $Problem->add($data);
-        $this->ajaxReturn($count);
+            $count = $Problem->add($data);
+            $this->ajaxReturn($count);
+        } else {
+            $this->ajaxReturn(0);
+        }
 
     }
 

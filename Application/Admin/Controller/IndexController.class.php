@@ -1,11 +1,24 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class IndexController extends BaseController {
+    function _initialize() {
+        if(!is_admin_login()) {
+            redirect('/admin/Auth/login?callback='.urlencode($_SERVER["REQUEST_URI"]));
+        } else {
+
+        }
+        $name = session('admin_name');
+        $Problem = M('problem');
+        $count1 = $Problem
+                ->where(['pro_status' => '0'])
+                ->count();
+        $this->pro_count = $count1;
+        $this->uname = $name;
+    }
 
     //显示用户信息界面
     public function index(){
-        $name = session('admin_name');
         $uname = I('post.Uname');
         $Users = M('users');
         $Userinfo = M('userinfo');
@@ -25,10 +38,10 @@ class IndexController extends Controller {
                         ->limit($limit)
                         ->select();
 
+        
         $this->page = $page->show();
         $this->user_active = "active";
         $this->user_info_active = "active";
-        $this->uname = $name;
         $this->user_count = $count;
         $this->assign('data', $data);
         $this->display();
@@ -36,7 +49,6 @@ class IndexController extends Controller {
 
     //显示用户密码重置界面
     public function reset_pwd() {
-        $name = session('admin_name');
         $uname = I('post.Uname');
         $Users = M('users');
 
@@ -52,11 +64,9 @@ class IndexController extends Controller {
                         ->order('uid DESC')
                         ->limit($limit)
                         ->select();
-
         $this->page = $page->show();
         $this->user_active = "active";
         $this->user_pwd_active = "active";
-        $this->uname = $name;
         $this->user_count = $count;
         $this->assign('data', $data);
         $this->display();
@@ -68,7 +78,6 @@ class IndexController extends Controller {
 
         $data['goodtype'] = $GoodType->select();
 
-        $this->uname = session('admin_name');
         $this->goods_active = "active";
         $this->goods_add_active = "active";
         $this->assign('data', $data);
@@ -94,7 +103,6 @@ class IndexController extends Controller {
 
         $this->page = $page->show();
         $this->goods_count = $count;
-        $this->uname = session('admin_name');
         $this->goods_active = "active";
         $this->assign('data', $data);
         if($action == 'update') {
@@ -133,7 +141,6 @@ class IndexController extends Controller {
         $this->order_active = "active";
         $this->order_info_active = "active";
         $this->order_count = $count;
-       $this->uname = session('admin_name');
         $this->assign('data', $data);
         $this->display();
     }
@@ -162,7 +169,6 @@ class IndexController extends Controller {
         $this->order_detail = $order_detail;
         $this->assign('data', $order);
         $this->order_id = $order_id;
-        $this->uname = session('admin_name');
         $this->display();
     }
 
@@ -190,32 +196,53 @@ class IndexController extends Controller {
         $this->cmt_count = $count;
         $this->cmt_del_active = "active";
         $this->cmt_active = "active";
-        $this->uname = session('admin_name');
         $this->display('delete_comment');
     }
 
-    //添加新商品页面
+    //添加公告页面
     public function add_bulletin() {
-        $this->uname = session('admin_name');
         $this->bul_active = "active";
         $this->bul_add_active = "active";
         $this->display();
     }
 
-    // public function insert() {
-    //     // $Users = M('users');
-    //     // $data['uname'] = 'ssss';
-    //     // $data['pwd'] = '333';
-    //     // $data['secret'] = '33';
-    //     // $data['answer'] = 'dasd';
-    //     // $data['rolecoode'] = '1222';
-    //     // $data2['reg_time'] = time();
-    //     // for($i = 1; $i < 10000; $i++) {
-    //     //     $data2['uid'] = $Users->add($data);
-    //     //     M('userinfo')->add($data2);
-    //     // }
-    //     // $Users->where(['uname' => 'ssss'])->delete();
-    //     // for($i = 10015; $i <= 20013; $i++)
-    //     // M('userinfo')->where(['uid' => $i])->delete();
-    // }
+    //显示用户问题列表
+    public function pro_list() {
+        $uname = I('uname');
+        $map['uname'] = array('like', "%$uname%");
+        $Problem = M('problem');
+        $count = $Problem
+                ->where($map)
+                ->count();
+        $page = new \Think\PageBootcss($count, 10);
+        $limit = $page->firstRow.','.$page->listRows;
+        $data['pro'] = $Problem
+                    ->where($map)
+                    ->order('pro_id asc')
+                    ->limit($limit)
+                    ->select();
+
+        $data1['pro_status'] = 1;
+        for($i = 0; $i < count($data['pro']); $i++) {
+            $Problem->where(['pro_id' => $data['pro'][$i]['pro_id']])->save($data1);
+        }
+
+
+        $this->page = $page->show();
+        $this->assign('data', $data);
+        $this->count = $count;
+        $this->display();
+    }
+
+    //信息查看回复
+    public function pro_info() {
+        $pro_id = I('pro_id');
+        $map['pro_id'] = $pro_id;
+        $Problem = M('problem');
+        $pro = $Problem
+                ->where($map)
+                ->find();
+        $this->assign('pro', $pro);
+        $this->display();
+    }
 }

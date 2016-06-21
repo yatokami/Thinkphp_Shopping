@@ -158,90 +158,45 @@
     <!-- /.sidebar -->
 </aside>
         
- <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                订单管理
-                <small>订单列表</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
-                <li class="active">订单管理</li>
-                <li class="active">订单列表</li>
-            </ol>
-        </section>
-
-        <!-- Main content -->
-        <section class="content">
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="box">
-                        <div class="box-header">
-                            <h3 class="box-title">订单列表</h3>
-                        </div><!-- /.box-header -->
-                        <div class="box-body">
-                            <div class="row">
-                                <form action=<?php echo U('Index/order_info');?> method="get">
-                                    <div class="col-sm-6">
-                                        <div id="example1_filter" class="dataTables_filter">
-                                            <label>根据用户查询:<input id="searchtxt1" name="uname" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label>
-                                            <label>根据订单号查询:<input id="searchtxt2" name="order_id" type="search" class="form-control input-sm" aria-controls="example1"></label>
-                                            <button id="search" type="submit" class="btn btn-block btn-info" style="width:70px;">查询</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                    	<th><input id="CheckAll" type="checkbox">全选订单号</th>
-                                    	<th>下单时间</th>
-                                    	<th>收货人</th>
-                                    	<th>总金额</th>
-                                    	<th>订单状态</th>
-                                    	<th>操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if(is_array($data["orders"])): $i = 0; $__LIST__ = $data["orders"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="odd">
-                                   			<td><input data-id="<?php echo ($vo["order_id"]); ?>" data-index="<?php echo ++$a;?>"name="chkItem" class="li-checkbox input" type="checkbox" /><?php echo ($vo["order_id"]); ?></td>
-                                   			<td><?php echo (date("y年m月d日h时m分s秒",$vo["order_date"])); ?></td>
-                                   			<td><?php echo ($vo["uname"]); ?><br><?php echo ($vo["address"]); ?></td>
-                                   			<td><?php echo ($vo["totalmoney"]); ?></td>
-                                   			<td><?php echo ($vo["order_status"]); ?></td>
-                                   			<td><a href='<?php echo U('Index/order_info_view', array('order_id' => $vo['order_id']));?>' name="select" class="btn btn-primary">查看</a>
-                                   			<button name="<?php echo ($vo["order_id"]); ?>" onclick="delete_order(this)" class="btn btn-primary">移除</button></td>
-                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </tbody>
-                            </table>
-
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
-                                    <button id="pass" name="pass" class="btn btn-primary" onclick="action(this)">确认</button>
-                                    <button id="cancel" name="cancel" class="btn btn-primary" onclick="action(this)">取消</button>
-                                        总共有 <?php echo ($order_count); ?> 条数据
-                                    </div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
-                                    </div>
-                                    <ul class="pagination">
-										<?php echo ($page); ?>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
+<div class="content-wrapper">
+	<section class="content-header">
+        <h1>
+           信息管理
+            <small>用户问题回复</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
+            <li class="active"><a href="<?php echo U('Index/pro_list');?>">信息管理</a></li>
+            <li class="active">用户问题回复</li>
+        </ol>
+    </section>
+     <section class="content">
+        <div class="row">
+			<div class="modal-header">
+		            <div class="box-header">
+                            <h3 class="box-title">用户问题</h3>
                     </div>
+                    <div class="modal-body" style="text-align:center">
+		             <textarea name="pro_content" id="pro_content" class="form-control" rows="5" placeholder="内容" readonly><?php echo ($pro["pro_content"]); ?></textarea>
+		    		</div>
+		    </div>
+		    <div class="modal-body">
+		    <form action="<?php echo U('User/reply');?>" method="post">
+		    	<input name="pro_id" type="hidden" value="<?php echo ($pro["pro_id"]); ?>">
+		    	<input name="uname" type="hidden" value="<?php echo ($pro["uname"]); ?>">
+		    	<div class="box-header">
+                    <h3 class="box-title">客服回答</h3>
                 </div>
-            </div>
+	            <textarea name="reply_content" id="pro_content" class="form-control" rows="5" placeholder="内容"></textarea>
+		    </div>
+		    <div class="modal-footer">
+	            <input id='sub' type="submit" class="btn btn-primary" value="回复">
+		    </div>
+		    </form>
+	    </div>
+    </section>
+</div>
 
-        </section><!-- /.content -->
-    </div><!-- /.content-wrapper -->
 
     </div>
 
@@ -254,89 +209,6 @@
     <script type="text/javascript" src="/Public/admin/plugins/fastclick/fastclick.min.js"></script>
     <script type="text/javascript" src="/Public/admin/dist/js/demo.js"></script>
     
-<script type="text/javascript">
-	$(function () {
-        $("#example1").DataTable()
-        $('#example2').DataTable({
-            "paging": false,
-            "lengthChange": false,
-            "searching": false,
-            "ordering": false,
-            "info": false,
-            "autoWidth": true
-        })
-    })
-
-	 //checkbox 单选事件
-        $('input[name="chkItem"]:checkbox').click(function () {
-            var isCheck = $('input[name="chkItem"]:not(:checked)').length ? false : true
-            $('#CheckAll').prop("checked", isCheck)
-        });
-
-        //checkbox 全选事件
-        $('#CheckAll').click(function () {
-            var self = $(this)
-            $('input[name="chkItem"]').each(function () {
-                $(this).prop("checked", self.is(':checked'))
-            })
-        })
-    function delete_order(obj) {
-        $order_id = obj.name;
-        var data = {
-            'order_id' : $order_id
-        }
-        $.ajax({
-            type: 'post',
-            url: "<?php echo U('User/delete_order');?>",
-            data: data,
-            success: function (data) {
-            var result = $.parseJSON(data)
-                if(result == 1) {
-                    alert('移除成功')
-                    location.reload()
-                } else {
-                    alert('移除失败')
-                }
-            },
-            error: function (data, status) {
-               alert('移除时出现异常')
-            }
-        })
-    }
-
-    function action(obj) {
-        var action = obj.name
-        var datas = []
-        $('input[name="chkItem"]:checked').each(function () {
-            var self = $(this),
-                    order_id = self.attr('data-id')
-            var row = {"order_id": order_id}
-            datas.push(row)
-        })
-
-        data = {"data": datas , "action" : action}
-        console.log(data)
-        $.ajax({
-            type: 'post',
-            url: "<?php echo U('User/action_cmt');?>",
-            data: data,
-            success: function (data) {
-                console.log(data);
-                if(data > 1) {
-                    alert('操作成功')
-                } else {
-                    alert('操作失败')
-                }
-                location.reload();
-            },
-            error: function (data, status) {
-               alert('操作时出现异常')
-            }
-        });
-    }
-
-
-</script>
 
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.

@@ -158,17 +158,17 @@
     <!-- /.sidebar -->
 </aside>
         
- <div class="content-wrapper">
+<div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                订单管理
-                <small>订单列表</small>
+               信息管理
+                <small>用户问题投诉列表</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
-                <li class="active">订单管理</li>
-                <li class="active">订单列表</li>
+                <li class="active">信息管理</li>
+                <li class="active">用户问题投诉列表</li>
             </ol>
         </section>
 
@@ -179,15 +179,14 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">订单列表</h3>
+                            <h3 class="box-title">用户问题投诉列表</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="row">
-                                <form action=<?php echo U('Index/order_info');?> method="get">
+                                <form action=<?php echo U('Index/pro_list');?> method="get">
                                     <div class="col-sm-6">
                                         <div id="example1_filter" class="dataTables_filter">
                                             <label>根据用户查询:<input id="searchtxt1" name="uname" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label>
-                                            <label>根据订单号查询:<input id="searchtxt2" name="order_id" type="search" class="form-control input-sm" aria-controls="example1"></label>
                                             <button id="search" type="submit" class="btn btn-block btn-info" style="width:70px;">查询</button>
                                         </div>
                                     </div>
@@ -197,23 +196,16 @@
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                    	<th><input id="CheckAll" type="checkbox">全选订单号</th>
-                                    	<th>下单时间</th>
-                                    	<th>收货人</th>
-                                    	<th>总金额</th>
-                                    	<th>订单状态</th>
-                                    	<th>操作</th>
+                                    	<th><input id="CheckAll" type="checkbox">投诉用户</th>
+                                    	<th>投诉内容</th>
+                                    	<th>投诉时间</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php if(is_array($data["orders"])): $i = 0; $__LIST__ = $data["orders"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="odd">
-                                   			<td><input data-id="<?php echo ($vo["order_id"]); ?>" data-index="<?php echo ++$a;?>"name="chkItem" class="li-checkbox input" type="checkbox" /><?php echo ($vo["order_id"]); ?></td>
-                                   			<td><?php echo (date("y年m月d日h时m分s秒",$vo["order_date"])); ?></td>
-                                   			<td><?php echo ($vo["uname"]); ?><br><?php echo ($vo["address"]); ?></td>
-                                   			<td><?php echo ($vo["totalmoney"]); ?></td>
-                                   			<td><?php echo ($vo["order_status"]); ?></td>
-                                   			<td><a href='<?php echo U('Index/order_info_view', array('order_id' => $vo['order_id']));?>' name="select" class="btn btn-primary">查看</a>
-                                   			<button name="<?php echo ($vo["order_id"]); ?>" onclick="delete_order(this)" class="btn btn-primary">移除</button></td>
+                                    <?php if(is_array($data["pro"])): $i = 0; $__LIST__ = $data["pro"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr role="row" class="odd">
+                                   			<td><input data-id="<?php echo ($vo["pro_id"]); ?>"  name="chkItem" class="li-checkbox input" type="checkbox" /><?php echo ($vo["uname"]); ?></td>
+                                   			<td><a href='<?php echo U('Index/pro_info' , array('pro_id' => $vo['pro_id']));?>'><?php echo ($vo["pro_content"]); ?></a></td>
+                                   			<td><?php echo (date("y年m月d日h时m分s秒",$vo["pro_time"])); ?></td>
                                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </tbody>
                             </table>
@@ -221,9 +213,8 @@
                             <div class="row">
                                 <div class="col-sm-5">
                                     <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">
-                                    <button id="pass" name="pass" class="btn btn-primary" onclick="action(this)">确认</button>
-                                    <button id="cancel" name="cancel" class="btn btn-primary" onclick="action(this)">取消</button>
-                                        总共有 <?php echo ($order_count); ?> 条数据
+                                    <button id="delete" name="delete" class="btn btn-primary" onclick="action(this)">删除</button>
+                                        总共有 <?php echo ($count); ?> 条数据
                                     </div>
                                 </div>
                                 <div class="col-sm-7">
@@ -263,7 +254,7 @@
             "searching": false,
             "ordering": false,
             "info": false,
-            "autoWidth": true
+            "autoWidth": false
         })
     })
 
@@ -280,49 +271,23 @@
                 $(this).prop("checked", self.is(':checked'))
             })
         })
-    function delete_order(obj) {
-        $order_id = obj.name;
-        var data = {
-            'order_id' : $order_id
-        }
-        $.ajax({
-            type: 'post',
-            url: "<?php echo U('User/delete_order');?>",
-            data: data,
-            success: function (data) {
-            var result = $.parseJSON(data)
-                if(result == 1) {
-                    alert('移除成功')
-                    location.reload()
-                } else {
-                    alert('移除失败')
-                }
-            },
-            error: function (data, status) {
-               alert('移除时出现异常')
-            }
-        })
-    }
-
     function action(obj) {
         var action = obj.name
         var datas = []
         $('input[name="chkItem"]:checked').each(function () {
             var self = $(this),
-                    order_id = self.attr('data-id')
-            var row = {"order_id": order_id}
+                    pro_id = self.attr('data-id')
+            var row = {"pro_id": pro_id}
             datas.push(row)
         })
 
         data = {"data": datas , "action" : action}
-        console.log(data)
         $.ajax({
             type: 'post',
-            url: "<?php echo U('User/action_cmt');?>",
+            url: "<?php echo U('User/action_pro');?>",
             data: data,
             success: function (data) {
-                console.log(data);
-                if(data > 1) {
+                if(data > 0) {
                     alert('操作成功')
                 } else {
                     alert('操作失败')
@@ -334,8 +299,6 @@
             }
         });
     }
-
-
 </script>
 
 

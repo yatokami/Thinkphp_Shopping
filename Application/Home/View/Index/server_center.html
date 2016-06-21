@@ -4,7 +4,7 @@
     <form method="post">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">请在下面输入您的问题</h4>
+            <h4 class="modal-title" id="myModalLabel">请在下面输入您的问题(请在30字以内)</h4>
         </div>
         <div class="modal-body" style="text-align:center">
              <textarea name="pro_content" id="pro_content" class="form-control" rows="5" required placeholder="内容"></textarea><br>
@@ -19,26 +19,30 @@
 	<script type="text/javascript">
 		$('#sub').click(function() {
 			var pro_content = $('#pro_content').val()
-            if(pro_content != "") {
-			    var data = {'pro_content': pro_content}
-    			$.ajax({
-    				url: "{:U('User/sub_question')}",
-    				type: "POST",
-    				data: data,
-    				success: function (data) {
-                    	if(data > 0) {
-                    		alert('提交成功，请等待客服人员处理')
-                    		location.reload() 
-                    	} else {
-                    		alert('用户还未登录')
-                    	}
-                    },
-                    error: function () {
-                    	alert('提交出现异常')
-                    }
-    			})
+            if(pro_content.length <= 30) {
+                if(pro_content != "") {
+                    var data = {'pro_content': pro_content}
+                    $.ajax({
+                        url: "{:U('User/sub_question')}",
+                        type: "POST",
+                        data: data,
+                        success: function (data) {
+                            if(data > 0) {
+                                alert('提交成功，请等待客服人员处理')
+                                location.reload() 
+                            } else {
+                                alert('用户还未登录')
+                            }
+                        },
+                        error: function () {
+                            alert('提交出现异常')
+                        }
+                    })
+                } else {
+                    alert('问题不能为空')
+                }
             } else {
-                alert('问题不能为空')
+                alert('内容不能超过30字')
             }
 		})
 	</script>

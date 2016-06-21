@@ -1,0 +1,46 @@
+<extend name="./Application/Admin/View/layout.html" />
+
+<block name="content">
+<div class="content-wrapper">
+	<section class="content-header">
+        <h1>
+           信息管理
+            <small>用户问题回复</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>管理界面</a></li>
+            <li class="active"><a href="{:U('Index/pro_list')}">信息管理</a></li>
+            <li class="active">用户问题回复</li>
+        </ol>
+    </section>
+     <section class="content">
+        <div class="row">
+			<div class="modal-header">
+		            <div class="box-header">
+                            <h3 class="box-title">用户问题</h3>
+                    </div>
+                    <div class="modal-body" style="text-align:center">
+		             <textarea name="pro_content" id="pro_content" class="form-control" rows="5" placeholder="内容" readonly>{$pro.pro_content}</textarea>
+		    		</div>
+		    </div>
+		    <div class="modal-body">
+		    <form action="{:U('User/reply')}" method="post">
+		    	<input name="pro_id" type="hidden" value="{$pro.pro_id}">
+		    	<input name="uname" type="hidden" value="{$pro.uname}">
+		    	<div class="box-header">
+                    <h3 class="box-title">客服回答</h3>
+                </div>
+	            <textarea name="reply_content" id="pro_content" class="form-control" rows="5" placeholder="内容"></textarea>
+		    </div>
+		    <div class="modal-footer">
+	            <input id='sub' type="submit" class="btn btn-primary" value="回复">
+		    </div>
+		    </form>
+	    </div>
+    </section>
+</div>
+
+</block>
+
+<block name="script">
+</block>
