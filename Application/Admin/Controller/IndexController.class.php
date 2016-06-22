@@ -87,7 +87,7 @@ class IndexController extends BaseController {
     //显示商品信息界面
     public function good() {
         $Goods = M('goods');
-        $goods_name = I('get.GoodsName');
+        $goods_name = I('GoodsName');
         $action = I('action');
         $map['goods_name'] = array('like', "%$goods_name%");
         $count = $Goods
@@ -209,6 +209,13 @@ class IndexController extends BaseController {
     //显示用户问题列表
     public function pro_list() {
         $uname = I('uname');
+        $see = I('see');
+        if($see == "已阅") {
+            $map['pro_status'] = 1;
+        } else if($see == "未阅") {
+            $map['pro_status'] = 0;
+        }
+
         $map['uname'] = array('like', "%$uname%");
         $Problem = M('problem');
         $count = $Problem

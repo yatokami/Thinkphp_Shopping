@@ -317,6 +317,30 @@ class UserController extends BaseController {
 
     }
 
+    //信息中心显示
+    public function rep_info() {
+        $uname = session('uname');
+        $Reply = M('reply');
+        $map['uname'] = $uname;
+
+        $count = $Reply
+                ->where($map)
+                ->count();
+        $page = new \Think\PageBootcss($count, 10);
+        $limit = $page->firstRow.','.$page->listRows;
+        $data['reply'] = $Reply
+                        ->where($map)
+                        ->order('rep_id DESC')
+                        ->limit($limit)
+                        ->select();
+
+        $this->page = $page->show();
+        $this->uname = $uname;
+        $this->assign('data', $data);
+        $this->display('message_center');
+    }
+
+
     // public function getwell() {
     //     $Goods = M('goods');
     //     $WellBad = M('wellbad');

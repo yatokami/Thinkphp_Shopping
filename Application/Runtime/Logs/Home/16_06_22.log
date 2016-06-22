@@ -1,0 +1,863 @@
+[ 2016-06-22T21:11:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.1481s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0308s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000688s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.271021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.271122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002082s ]
+
+[ 2016-06-22T21:11:11+08:00 ] 127.0.0.1 /Home/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.008307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008367s ]
+NOTIC: [8] Undefined variable: name G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2016-06-22T21:15:49+08:00 ] 127.0.0.1 /Home/Auth/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined variable: name G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001587s ]
+
+[ 2016-06-22T21:15:58+08:00 ] 127.0.0.1 /Home/Auth/getlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003721s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `users` WHERE `uname` = 'a12345' AND `pwd` = 'af8f9dffa5d420fbc249141645b962ee'  [ RunTime:0.0413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2016-06-22T21:15:59+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001793s ]
+
+[ 2016-06-22T21:18:28+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003041s ]
+
+[ 2016-06-22T21:18:31+08:00 ] 127.0.0.1 /Home/Index/server_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001700s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002702s ]
+
+[ 2016-06-22T21:18:36+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001474s ]
+
+[ 2016-06-22T21:18:37+08:00 ] 127.0.0.1 /Home/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002833s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2016-06-22T21:18:38+08:00 ] 127.0.0.1 /Home/Auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002692s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: name G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\25520d513124a6369605db6f8fa5dc6c.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001783s ]
+
+[ 2016-06-22T21:18:43+08:00 ] 127.0.0.1 /Home/Auth/getlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `users` WHERE `uname` = 'a12345' AND `pwd` = 'af8f9dffa5d420fbc249141645b962ee'  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2016-06-22T21:18:45+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001793s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001470s ]
+
+[ 2016-06-22T21:19:02+08:00 ] 127.0.0.1 /Home/Index/server_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2016-06-22T21:19:12+08:00 ] 127.0.0.1 /Home/User/sub_question.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002476s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0102s ]
+SQL: INSERT INTO `problem` (`uname`,`pro_content`,`pro_time`) VALUES ('a12345','商品太少','1466601552') [ RunTime:0.0328s ]
+
+[ 2016-06-22T21:19:13+08:00 ] 127.0.0.1 /Home/Index/server_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2016-06-22T21:20:26+08:00 ] 127.0.0.1 /Home/Index/server_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001916s ]
+
+[ 2016-06-22T21:20:29+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+ERR: 非法操作:rep_info
+
+[ 2016-06-22T21:47:10+08:00 ] 127.0.0.1 /Home/User/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0087s ]
+SQL: SELECT `uid` FROM `users` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `userinfo` WHERE `uid` = 4  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant sex - assumed 'sex' G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\6a042dd4e91156dd40decf5f4fccdc08.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002345s ]
+
+[ 2016-06-22T21:47:12+08:00 ] 127.0.0.1 /Home/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0327s ]
+SQL: SELECT * FROM `orders` WHERE `uname` = 'a12345' ORDER BY order_id DESC LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT sum(num) FROM `orderdetail` WHERE `order_id` = 1 GROUP BY order_id LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\8def8c9ecaf6a13db7ef7bbd50fd9be3.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2016-06-22T21:58:08+08:00 ] 127.0.0.1 /Home/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orders` WHERE `uname` = 'a12345' ORDER BY order_id DESC LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT sum(num) FROM `orderdetail` WHERE `order_id` = 1 GROUP BY order_id LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\8def8c9ecaf6a13db7ef7bbd50fd9be3.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2016-06-22T21:58:11+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0082s ]
+NOTIC: [8] Undefined variable: uame G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = null ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Home/View/User/rep_info.html
+
+[ 2016-06-22T21:58:28+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0091s ]
+NOTIC: [8] Undefined variable: uame G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = null ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2016-06-22T21:59:20+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002550s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0093s ]
+NOTIC: [8] Undefined variable: uame G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = null ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2016-06-22T22:00:03+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+
+[ 2016-06-22T22:00:08+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001822s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0095s ]
+NOTIC: [8] Undefined variable: uame G:\UPUPW_AP5.6\htdocs\Application\Home\Controller\UserController.class.php 第 324 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = null LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = null ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2016-06-22T22:00:39+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2016-06-22T22:01:00+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001666s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2016-06-22T22:01:14+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2016-06-22T22:01:27+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002647s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001922s ]
+
+[ 2016-06-22T22:01:33+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002375s ]
+
+[ 2016-06-22T22:01:52+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2016-06-22T22:01:57+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001865s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-06-22T22:02:03+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002344s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2016-06-22T22:02:08+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001483s ]
+
+[ 2016-06-22T22:02:46+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003288s ]
+
+[ 2016-06-22T22:03:03+08:00 ] 127.0.0.1 /Home/User/rep_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `uname` = 'a12345' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `reply` WHERE `uname` = 'a12345' ORDER BY rep_id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: rep_count G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\18698ec7c7b6ef583ff551ab7082deab.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2016-06-22T22:11:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `bulletin` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bulletin` ORDER BY bul_startime DESC LIMIT 5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001459s ]
+
+[ 2016-06-22T22:11:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `reply` WHERE `rep_status` = 0 AND `uname` = null LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `bulletin` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `goods` INNER JOIN wellbad ON goods.goods_id = wellbad.goods_id  ORDER BY wells DESC LIMIT 6   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bulletin` ORDER BY bul_startime DESC LIMIT 5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: page G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001966s ]
+

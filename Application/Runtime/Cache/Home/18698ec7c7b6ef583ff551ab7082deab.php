@@ -48,6 +48,37 @@
         }
     </style>
 	
+	<style type="text/css">
+        .cart-heading {
+            height: 40px;
+            background-color: #EFEDED;
+        }
+
+        .cart-body {
+            background-color: #F7F7F7;
+        }
+
+        .cart-body ul li {
+            list-style-type: none;
+            margin-left: -30px;
+            width: 870px;
+        }
+
+        .cart-body ul li div {
+            float: left;
+            height: 80px;
+        }
+
+        .li-content {
+            margin: 20px 0 0 15px;
+            width: 500px;
+        }
+
+        .li-date {
+            margin: 20px 0 0 77px;
+            width: 105px;
+        }
+    </style>
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy">
@@ -78,51 +109,44 @@
 
  <div class="container">
   
-    <form method="post">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">请在下面输入您的问题(请在30字以内)</h4>
+<div style="margin:50px auto;width: 1024px;">
+        <div>
+            <div>
+                <h2>信息中心</h2>
+                <hr>
+            </div>
+            <div>
+                <div class="cart-heading">
+                    <div style="padding: 10px 0 0 30px">
+                        <span style="margin-right: 500px;">信息内容</span>
+                        <span style="padding-right: 0px;">接收日期</span>
+                    </div>
+                </div>
+                <div class="cart-body">
+                    <ul>
+                        <?php if(is_array($data["reply"])): $i = 0; $__LIST__ = $data["reply"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+                                <div class="li-content">
+                                	<span><?php echo ($vo["rep_content"]); ?></span>
+                                </div>
+                                <div class="li-date">
+                                    <span><?php echo (date("y-m-d",$vo["rep_time"])); ?></span>
+                                </div>
+                            </li><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </ul>
+                </div>
+                <div style="float: right;height: 35px;width:330px;">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <ul class="pager">
+                            <?php echo ($page); ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body" style="text-align:center">
-             <textarea name="pro_content" id="pro_content" class="form-control" rows="5" required placeholder="内容"></textarea><br>
-        </div>
-        <div class="modal-footer">
-            <input id='sub' type="button" class="btn btn-primary" value="提问">
-        </div>
-    </form>
+    </div>
 
  </div>
  
-	<script type="text/javascript">
-		$('#sub').click(function() {
-			var pro_content = $('#pro_content').val()
-            if(pro_content.length <= 30) {
-                if(pro_content != "") {
-                    var data = {'pro_content': pro_content}
-                    $.ajax({
-                        url: "<?php echo U('User/sub_question');?>",
-                        type: "POST",
-                        data: data,
-                        success: function (data) {
-                            if(data > 0) {
-                                alert('提交成功，请等待客服人员处理')
-                                location.reload() 
-                            } else {
-                                alert('用户还未登录')
-                            }
-                        },
-                        error: function () {
-                            alert('提交出现异常')
-                        }
-                    })
-                } else {
-                    alert('问题不能为空')
-                }
-            } else {
-                alert('内容不能超过30字')
-            }
-		})
-	</script>
 
 </body>
 </html>

@@ -2,6 +2,15 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+    function _initialize() {
+        $uname = session('uname');
+        $Reply = M('reply');
+        $count1 = $Reply
+                ->where(['rep_status' => '0', 'uname' => $uname])
+                ->count();
+        $this->rep_count = $count1;
+        $this->uname = session('uname');
+    }
     //主页显示
     public function index() {
         import('ORG.Util.Page');
@@ -12,6 +21,7 @@ class IndexController extends Controller {
         }
 
         $Goods = M('goods');
+        $Bulletin = M('bulletin');
         $type_id = I('get.type_id');
 
         if(empty($type_id)) {
@@ -43,8 +53,11 @@ class IndexController extends Controller {
         
         $goodtype = M('goodtype')
                     ->select();
+        $data['bulletin'] = $Bulletin
+                            ->order('bul_startime DESC')
+                            ->limit(5)
+                            ->select();
         $data['goodtype'] = $goodtype;
-        $this->uname = session('uname');
         $this->assign('data',$data);
         $this->display();
     }
@@ -77,7 +90,6 @@ class IndexController extends Controller {
         $this->comment = $comment;
         $this->good = $good;
         $this->wellbad = $wellbad;
-        $this->uname = session('uname');
         $this->display();
     }
     
@@ -99,16 +111,12 @@ class IndexController extends Controller {
         $data['goodtype'] = M('goodtype')->select();
         $data['goods'] = $goods;
         $this->page = $page->show();
-        $this->uname = session('uname');
         $this->assign('data',$data);
         $this->display('index2');
     }
 
     //客服中心
     public function server_center() {
-        $uname = session('uname');
-
-        $this->uname = $uname;
         $this->display();
     }
 }

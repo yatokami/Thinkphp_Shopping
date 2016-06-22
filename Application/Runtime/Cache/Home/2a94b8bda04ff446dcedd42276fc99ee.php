@@ -102,6 +102,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo ($uname); ?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="<?php echo U('User/info');?>">账号管理</a></li>
+                        <li><a href="<?php echo U('User/rep_info');?>">信息中心<span class="label label-success"><?php echo ($rep_count); ?></span></a></li>
                         <li><a href="<?php echo U('Auth/logout');?>">退出</a></li>
                     </ul>
                 </li>
@@ -130,16 +131,7 @@
             <h3>端午大放送</h3>
             <div class="scroll">
                 <ul id="ul1">
-                    <li><img src="/Public/assets/img/Bulletin/temp_pic_1.jpg"  width="630" height="210"></li>
-
-                    <li><img src="/Public/assets/img/Bulletin/temp_pic_2.jpg"  width="630" height="210"></li>
-
-                    <li><img src="/Public/assets/img/Bulletin/temp_pic_3.jpg"  width="630" height="210"></li>
-
-                    <li><img src="/Public/assets/img/Bulletin/temp_pic_4.jpg"  width="630" height="210"></li>
-
-                    <li><img src="/Public/assets/img/Bulletin/temp_pic_5.jpg"  width="630" height="210"></li>
-
+                <?php if(is_array($data["bulletin"])): $i = 0; $__LIST__ = $data["bulletin"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><img src="/Public/bulletin/<?php echo ($vo["bul_imgsrc"]); ?>"  width="630" height="210"></li><?php endforeach; endif; else: echo "" ;endif; ?>
                 </ul>
 
                 <a href="#" class="prev"><img src="/Public/assets/img/Bulletin/arrow-prev.png" border="0"></a>

@@ -183,11 +183,13 @@
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="row">
-                                <form action=<?php echo U('Index/pro_list');?> method="get">
+                                <form action=<?php echo U('Index/pro_list');?> method="post">
                                     <div class="col-sm-6">
                                         <div id="example1_filter" class="dataTables_filter">
                                             <label>根据用户查询:<input id="searchtxt1" name="uname" type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label>
-                                            <button id="search" type="submit" class="btn btn-block btn-info" style="width:70px;">查询</button>
+                                            <button id="search" type="submit" class="btn btn-info" style="width:70px;">查询</button>
+                                            <input type="submit" class="btn btn-info" name="see" value="已阅" />
+                                            <input type="submit" class="btn btn-info" name="see" value="未阅" />
                                         </div>
                                     </div>
                                 </form>
