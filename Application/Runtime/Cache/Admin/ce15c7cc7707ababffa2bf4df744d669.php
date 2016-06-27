@@ -183,7 +183,7 @@
                         </div><!-- /.box-header -->
                         <div class="box-body">
                             <div class="row">
-                                   <form action="<?php echo U('Index/comment');?>" method="get">
+                                   <form action="<?php echo U('Index/comment');?>" method="post">
                                     <div class="col-sm-6">
                                         <div id="example1_filter" class="dataTables_filter">
                                         	<input type="hidden" name="action" value="delete">

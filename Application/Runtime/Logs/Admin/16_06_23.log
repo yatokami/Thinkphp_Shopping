@@ -1,0 +1,88 @@
+[ 2016-06-23T09:08:49+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+
+[ 2016-06-23T09:08:49+08:00 ] 127.0.0.1 /admin/Auth/login?callback=%2Fadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-06-23T09:08:54+08:00 ] 127.0.0.1 /Admin/Auth/getlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE `name` = 'admin' AND `pwd` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2016-06-23T09:08:55+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` INNER JOIN userinfo ON users.uid = userinfo.uid  WHERE `uname` LIKE '%%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `users` INNER JOIN userinfo ON users.uid = userinfo.uid  WHERE `uname` LIKE '%%' ORDER BY reg_time DESC LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001644s ]
+

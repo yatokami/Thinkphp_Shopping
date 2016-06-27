@@ -122,6 +122,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo ($uname); ?><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="<?php echo U('User/info');?>">账号管理</a></li>
+                        <li><a href="<?php echo U('User/rep_info');?>">信息中心<span class="label label-success"><?php echo ($rep_count); ?></span></a></li>
                         <li><a href="<?php echo U('Auth/logout');?>">退出</a></li>
                     </ul>
                 </li>

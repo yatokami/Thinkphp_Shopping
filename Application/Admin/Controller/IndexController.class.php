@@ -229,6 +229,7 @@ class IndexController extends BaseController {
                     ->limit($limit)
                     ->select();
 
+        //当信息列表显示时就将状态变为1,已阅的状态
         $data1['pro_status'] = 1;
         for($i = 0; $i < count($data['pro']); $i++) {
             $Problem->where(['pro_id' => $data['pro'][$i]['pro_id']])->save($data1);

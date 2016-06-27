@@ -1,0 +1,469 @@
+[ 2016-06-27T11:04:48+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+
+[ 2016-06-27T11:04:48+08:00 ] 127.0.0.1 /admin/Auth/login?callback=%2Fadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2016-06-27T11:07:41+08:00 ] 127.0.0.1 /Admin/Auth/getlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002959s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin` WHERE `name` = 'admin' AND `pwd` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2016-06-27T11:07:43+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` INNER JOIN userinfo ON users.uid = userinfo.uid  WHERE `uname` LIKE '%%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` INNER JOIN userinfo ON users.uid = userinfo.uid  WHERE `uname` LIKE '%%' ORDER BY reg_time DESC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001425s ]
+
+[ 2016-06-27T11:10:18+08:00 ] 127.0.0.1 /Admin/Index/reset_pwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE `uname` LIKE '%%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `users` WHERE `uname` LIKE '%%' ORDER BY uid DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 125 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\cd78e06e6780145661b08accdf2443b6.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001345s ]
+
+[ 2016-06-27T11:11:13+08:00 ] 127.0.0.1 /Admin/Index/add_good.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goodtype` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `goodtype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\df4dfbae918b0f9bc10c942d484133a3.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2016-06-27T11:12:42+08:00 ] 127.0.0.1 /Admin/Index/good/action/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002661s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE `goods_name` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goods` WHERE `goods_name` LIKE '%%' ORDER BY goods_id asc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\0b6d115671ca5402bbc630849b4e5118.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2016-06-27T11:13:38+08:00 ] 127.0.0.1 /Admin/Index/good/action/select.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE `goods_name` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `goods` WHERE `goods_name` LIKE '%%' ORDER BY goods_id asc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\b56b59a0218da9b61bc9d6d8764a6287.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-06-27T11:14:16+08:00 ] 127.0.0.1 /Admin/Index/good/action/delete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `goods` WHERE `goods_name` LIKE '%%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `goods` WHERE `goods_name` LIKE '%%' ORDER BY goods_id asc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 134 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\7a7dd431bf0ffb4be9cc341b42a2e6bd.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2016-06-27T11:14:50+08:00 ] 127.0.0.1 /Admin/Index/order_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `uname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `orders` WHERE `uname` LIKE '%%' ORDER BY order_id asc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 135 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 153 行.
+NOTIC: [8] Undefined variable: a G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\adce312a4ff169758c7fd2880cde035c.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2016-06-27T11:15:05+08:00 ] 127.0.0.1 /Admin/Index/order_info_view/order_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `orderdetail` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orders` WHERE `order_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `orderdetail` INNER JOIN goods ON orderdetail.goods_id = goods.goods_id  WHERE `order_id` = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 135 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\985dde54f100bd763d70d93e9d5fcf49.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2016-06-27T11:16:54+08:00 ] 127.0.0.1 /Admin/Index/comment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` INNER JOIN goods ON comment.goods_id = goods.goods_id  WHERE `uname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `comment` INNER JOIN goods ON comment.goods_id = goods.goods_id  WHERE `uname` LIKE '%%' ORDER BY cmt_id asc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 141 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 153 行.
+NOTIC: [8] Undefined variable: a G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\ce15c7cc7707ababffa2bf4df744d669.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2016-06-27T11:17:39+08:00 ] 127.0.0.1 /Admin/Index/add_bulletin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\73b26fd745f597afa0a3d18f1b9ef037.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001610s ]
+
+[ 2016-06-27T11:18:15+08:00 ] 127.0.0.1 /Admin/Index/pro_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `pro_status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE `uname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `problem` WHERE `uname` LIKE '%%' ORDER BY pro_id asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 11 [ RunTime:0.0003s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 12 [ RunTime:0.0001s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 13 [ RunTime:0.0001s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 14 [ RunTime:0.0001s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 15 [ RunTime:0.0001s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 16 [ RunTime:0.0001s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 17 [ RunTime:0.0002s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 18 [ RunTime:0.0001s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 19 [ RunTime:0.0001s ]
+SQL: UPDATE `problem` SET `pro_status`='1' WHERE `pro_id` = 20 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: user_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 122 行.
+NOTIC: [8] Undefined variable: user_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 125 行.
+NOTIC: [8] Undefined variable: user_pwd_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 126 行.
+NOTIC: [8] Undefined variable: goods_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 129 行.
+NOTIC: [8] Undefined variable: goods_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 132 行.
+NOTIC: [8] Undefined variable: goods_update_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 133 行.
+NOTIC: [8] Undefined variable: goods_select_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 134 行.
+NOTIC: [8] Undefined variable: goods_delete_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 135 行.
+NOTIC: [8] Undefined variable: order_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 138 行.
+NOTIC: [8] Undefined variable: order_info_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 141 行.
+NOTIC: [8] Undefined variable: cmt_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 144 行.
+NOTIC: [8] Undefined variable: cmt_del_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 147 行.
+NOTIC: [8] Undefined variable: bul_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 150 行.
+NOTIC: [8] Undefined variable: bul_add_active G:\UPUPW_AP5.6\htdocs\Application\Runtime\Cache\Admin\e33fc01eba2a6f19ac33fe61437dbba1.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
